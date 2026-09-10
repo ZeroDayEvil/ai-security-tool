@@ -37,13 +37,13 @@
 
   <h2>Эксплуатация уязвимостей</h2>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-20805-POC</b></a> 
-
+<br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-41096-POC" rel="nofollow"><b>CVE-2026-41096-POC</b></a> 
-
+<br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-83991-WRITEUP-AND-POC" rel="nofollow"><b>CVE-2026-83991-WRITEUP-AND-POC</b></a> 
-
+<br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-50416-WRITEUP-AND-POC" rel="nofollow"><b>CVE-2026-50416-WRITEUP-AND-POC</b></a> 
-
+<br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
 
 
