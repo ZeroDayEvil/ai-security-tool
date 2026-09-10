@@ -40,16 +40,18 @@
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC" rel="nofollow"><b>CVE-2026-20805-PoC</b></a> 
 <br>
+<a href="https://github.com/ZeroDayVPN/CVE-2026-24291" rel="nofollow"><b>CVE-2026-24291</b></a> 
+<br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-41089-Netlogon-RCE</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
 <br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-83991-WRITEUP-AND-POC" rel="nofollow"><b>CVE-2026-83991-WRITEUP-AND-POC</b></a> 
+<a href="https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC" rel="nofollow"><b>CVE-2026-83991-WriteUP-and-PoC</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC" rel="nofollow"><b>CVE-2026-50416-writeup-and-PoC</b></a> 
 <br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-66804-CrossDevice-Service-EoP</b></a> 
-
+<a href="https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP" rel="nofollow"><b>CVE-2026-66804-CrossDevice-Service-EoP</b></a> 
+<br>
 
   <h3>💻 Multi-Protocol Terminal & Client</h3>
   <ul>
