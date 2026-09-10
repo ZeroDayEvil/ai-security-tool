@@ -35,7 +35,7 @@
   </p>
   <hr>
 
-  <h2>Тестирование уязвимостей</h2>
+  <h2>Проверка безопасности</h2>
   <a href="https://github.com/ZeroDayVPN/CVE-2026-24291" rel="nofollow"><b>CVE-2026-24291</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-41096-PoC" rel="nofollow"><b>CVE-2026-41096-PoC</b></a> 
