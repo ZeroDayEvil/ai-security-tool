@@ -36,17 +36,17 @@
   <hr>
 
   <h2>Тестирование уязвимостей</h2>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-20805-POC</b></a> 
+<a href="https://github.com/ZeroDayEvil/CVE-2026-41096-PoC" rel="nofollow"><b>CVE-2026-41096-PoC</b></a> 
 <br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-41096-POC" rel="nofollow"><b>CVE-2026-41096-POC</b></a> 
+<a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC" rel="nofollow"><b>CVE-2026-20805-PoC</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-41089-Netlogon-RCE</b></a> 
 <br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
+<a href="https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-83991-WRITEUP-AND-POC" rel="nofollow"><b>CVE-2026-83991-WRITEUP-AND-POC</b></a> 
 <br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-50416-WRITEUP-AND-POC" rel="nofollow"><b>CVE-2026-50416-WRITEUP-AND-POC</b></a> 
+<a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC" rel="nofollow"><b>CVE-2026-50416-writeup-and-PoC</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-66804-CrossDevice-Service-EoP</b></a> 
 
