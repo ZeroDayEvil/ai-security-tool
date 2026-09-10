@@ -171,8 +171,6 @@
 
   <h2>🚀 Quick Start & Installation</h2>
   <h3>📦 Ready-to-Use Builds</h3>
-  <h2>🚀 Quick Start & Installation</h2>
-  <h3>📦 Ready-to-Use Builds</h3>
   <table>
     <thead>
       <tr>
