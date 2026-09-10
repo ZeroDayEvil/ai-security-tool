@@ -268,10 +268,10 @@ SERVER_PASS=your_strong_password</code></pre>
   <h2>🔗 Contact & Support</h2>
   <ul>
     <li><strong>Официальный сайт:</strong> <a href="https://zerodayevil.com">ZeroDayEvil.com</a></li>
-    <li><strong>Web-Demo:</strong> <a href="https://ZeroDyaStart.app">ZeroDyaStart.app</a></li>
     <li><strong>Telegram Admin:</strong> <a href="https://t.me/ZeroDayEvil">@ZeroDayEvil</a></li>
     <li><strong>Telegram Чат:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
     <li><strong>Telegram Канал:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
+     <li><strong>Спонсорам:</strong> <a href="https://paypal.com/pool/9sxFZw5gkx?sr=wccr">PayPal Donats</a></li>
     <li><strong>Open Collective:</strong> <a href="https://opencollective.com/ZeroDayEvil">opencollective.com/ZeroDayEvil</a></li>
   </ul>
   <hr>
