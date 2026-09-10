@@ -17,7 +17,7 @@
   </p>
 
   <p align="center">
-    <img width="100%" alt="AI Security Tool Banner" src="https://zerodayevil.github.io/ai-security-tool/assets/banner.png" style="max-width: 100%; border-radius: 8px;">
+    <img width="100%" alt="AI Security Tool Banner" src="/banner.png" style="max-width: 100%; border-radius: 8px;">
   </p>
   <hr>
 
