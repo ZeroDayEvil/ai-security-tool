@@ -34,11 +34,13 @@
     Мы создали AI Security Tool, чтобы избавиться от рутинного ручного анализа. Взамен разрозненных скриптов инструмент предоставляет единую AI-Native платформу, самостоятельно сопоставляющую контекст уязвимостей, подбирающую параметры и автоматизирующую процессы аудита.
   </p>
   <hr>
-
+CVE-2026-41089-Netlogon-RCE
   <h2>Тестирование уязвимостей</h2>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-20805-POC</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-41096-POC" rel="nofollow"><b>CVE-2026-41096-POC</b></a> 
+<br>
+<a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-41089-Netlogon-RCE</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
 <br>
