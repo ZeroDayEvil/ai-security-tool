@@ -45,6 +45,8 @@
 <a href="https://github.com/ZeroDayEvil/CVE-2026-50416-WRITEUP-AND-POC" rel="nofollow"><b>CVE-2026-50416-WRITEUP-AND-POC</b></a> 
 <br>
 <a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
+<br>
+<a href="https://github.com/ZeroDayEvil/CVE-2026-42978-POC-Research" rel="nofollow"><b>CVE-2026-66804-CrossDevice-Service-EoP</b></a> 
 
 
   <h3>💻 Multi-Protocol Terminal & Client</h3>
