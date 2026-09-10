@@ -1,3 +1,204 @@
-<html>
-fjfjf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Security Tool - open-source AI-native security platform for terminal workflow, vulnerability intelligence, and modular updates.">
+  <title>AI Security Tool | Security at Attack Speed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-red"></div>
+    <div class="bg-glow bg-glow-cyan"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./">
+        <span class="brand-mark">ZeroDayVPN</span>
+        <span class="brand-sub">AI Security Tool</span>
+      </a>
+      <nav class="main-nav">
+        <a href="./" aria-current="page">Home</a>
+        <a href="./updates/">Updates</a>
+        <a href="./downloads/">Downloads</a>
+        <a href="./modules/">Modules</a>
+      </nav>
+      <a class="btn btn-outline btn-small" href="https://github.com/ZeroDayEvil/ai-security-tool">GitHub</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero reveal">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Open Source · Free Core Platform · Community-Driven Security
+      </div>
+      <h1><span class="hero-gradient">Ship security updates at attack speed.</span></h1>
+      <p class="hero-copy">
+        AI Security Tool is where terminal power, vulnerability intelligence, and modular security engineering meet.
+        Detect, publish, and distribute protection updates in one public ecosystem.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="./downloads/#current-builds">Download for your OS</a>
+        <a class="btn btn-secondary" href="./updates/#critical-advisories">View critical advisories</a>
+        <a class="btn btn-secondary" href="./modules/#featured-modules">Explore modules</a>
+      </div>
+      <div class="quick-links">
+        <a href="#who-its-for">Who it's for</a>
+        <a href="#what-you-get">What you get</a>
+        <a href="#release-velocity">Release velocity</a>
+        <a href="#sponsors">Support the project</a>
+      </div>
+      <div class="feature-strip">
+        <div class="feature-pill"><strong>12+</strong> Specialized AI agents for security workflows</div>
+        <div class="feature-pill"><strong>Multi-Protocol</strong> SSH, RDP, VNC, SFTP, and more</div>
+        <div class="feature-pill"><strong>Modular by Design</strong> Separate repos for vulnerability modules</div>
+      </div>
+    </section>
+
+    <section class="stats reveal">
+      <article class="stat-card">
+        <div class="stat-value" data-count="12">0</div>
+        <div class="stat-label">AI Security Agents</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-value" data-count="8">0</div>
+        <div class="stat-label">Terminal Protocols</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-value">OSS</div>
+        <div class="stat-label">Open-core distribution</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label">Update publishing model</div>
+      </article>
+    </section>
+
+    <section id="who-its-for" class="section reveal">
+      <div class="section-head">
+        <p class="section-kicker">Audience</p>
+        <h2>Built for teams that cannot afford slow security cycles</h2>
+      </div>
+      <div class="card-grid card-grid-3">
+        <article class="glass-card">
+          <h3>Security Engineering Teams</h3>
+          <p>Coordinate detection, analysis, and remediation pipelines without switching across fragmented tools.</p>
+        </article>
+        <article class="glass-card">
+          <h3>Red Team / Pentest Operators</h3>
+          <p>Move from reconnaissance to exploitation research faster with shared context and module-based workflows.</p>
+        </article>
+        <article class="glass-card">
+          <h3>Open-source Maintainers</h3>
+          <p>Publish independent module repositories while staying visible in one trusted central index.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="what-you-get" class="section reveal">
+      <div class="section-head">
+        <p class="section-kicker">Product Value</p>
+        <h2>Everything needed to turn security findings into user protection</h2>
+      </div>
+      <div class="card-grid card-grid-2">
+        <article class="glass-card">
+          <h3>Operational Security Workspace</h3>
+          <p>One place for terminal execution, AI-assisted triage, and vulnerability context correlation.</p>
+        </article>
+        <article class="glass-card">
+          <h3>Fast Public Update Channel</h3>
+          <p>Security notices and release notes ship through the updates stream with direct remediation links.</p>
+        </article>
+        <article class="glass-card">
+          <h3>Cross-Platform Distribution</h3>
+          <p>Users can immediately download builds for Windows, macOS, Linux, and mobile form factors.</p>
+        </article>
+        <article class="glass-card">
+          <h3>Scalable Module Ecosystem</h3>
+          <p>Each vulnerability module can evolve independently in its own repository and maintainerspace.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="release-velocity" class="section reveal">
+      <div class="section-head">
+        <p class="section-kicker">Release Velocity</p>
+        <h2>Latest updates</h2>
+      </div>
+      <div
+        class="list-stack"
+        data-component="updates-list"
+        data-source="data/updates.json"
+        data-limit="4"
+      ></div>
+      <div class="section-cta">
+        <a class="btn btn-outline" href="./updates/">Open full update center</a>
+      </div>
+    </section>
+
+    <section id="module-ecosystem" class="section reveal">
+      <div class="section-head">
+        <p class="section-kicker">Module Ecosystem</p>
+        <h2>Community modules from independent authors</h2>
+      </div>
+      <div
+        class="card-grid card-grid-3"
+        data-component="modules-list"
+        data-source="data/modules.json"
+      ></div>
+      <div class="section-cta">
+        <a class="btn btn-outline" href="./modules/">Browse all modules</a>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section reveal">
+      <div class="support-grid">
+        <article class="support-card">
+          <p class="section-kicker">Sponsors</p>
+          <h3>Help us keep the platform free and fast</h3>
+          <p>
+            We do not charge for the core platform. Sponsorship funds vulnerability research,
+            infrastructure, CI resources, and long-term module maintenance.
+          </p>
+          <div class="inline-actions">
+            <a class="btn btn-primary" href="https://opencollective.com/ZeroDayEvil">Support on Open Collective</a>
+            <a class="btn btn-secondary" href="https://github.com/sponsors">Become a GitHub Sponsor</a>
+          </div>
+        </article>
+        <article class="support-card">
+          <p class="section-kicker">Contact</p>
+          <h3>Need help, want to contribute, or found a critical issue?</h3>
+          <ul class="link-list">
+            <li><a href="https://github.com/ZeroDayEvil/ai-security-tool/issues">GitHub Issues</a></li>
+            <li><a href="https://t.me/ZeroDyaTool_chat">Telegram Community Chat</a></li>
+            <li><a href="https://t.me/ZeroDyaTool_channel">Telegram Channel</a></li>
+            <li><a href="mailto:security@zerodayvpn.com">security@zerodayvpn.com</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>AI Security Tool</strong> - open security platform by ZeroDayVPN.</p>
+      <p class="footer-links">
+        <a href="./downloads/">Downloads</a>
+        <a href="./updates/">Updates</a>
+        <a href="./modules/">Modules</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/content-loader.js" defer></script>
+</body>
 </html>

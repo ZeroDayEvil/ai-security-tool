@@ -17,6 +17,14 @@
   </p>
 
   <p align="center">
+    <b>Website navigation:</b>
+    <a href="./index.html">Home</a> •
+    <a href="./updates/">Updates</a> •
+    <a href="./downloads/">Downloads</a> •
+    <a href="./modules/">Modules</a>
+  </p>
+
+  <p align="center">
     <img width="100%" alt="AI Security Tool Banner" src="resources/banner.png" style="max-width: 100%; border-radius: 8px;">
   </p>
   <hr>

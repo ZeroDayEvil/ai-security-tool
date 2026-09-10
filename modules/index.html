@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Module catalog for AI Security Tool with links to independent author repositories and pages.">
+  <title>Modules | AI Security Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-red"></div>
+    <div class="bg-glow bg-glow-cyan"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../">
+        <span class="brand-mark">ZeroDayVPN</span>
+        <span class="brand-sub">AI Security Tool</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../">Home</a>
+        <a href="../updates/">Updates</a>
+        <a href="../downloads/">Downloads</a>
+        <a href="./" aria-current="page">Modules</a>
+      </nav>
+      <a class="btn btn-outline btn-small" href="https://github.com/ZeroDayEvil/ai-security-tool/pulls">Contribute</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro reveal">
+      <p class="section-kicker">Module Ecosystem</p>
+      <h1>Independent module authors, one trusted index</h1>
+      <p>
+        Every module can be developed in its own repository and hosted on its own page.
+        The main website acts as a curated map so users can quickly find the right author and stream.
+      </p>
+      <p class="banner-note">
+        Publication standard: each module entry includes author profile, repository URL, and optional module page.
+      </p>
+    </section>
+
+    <div class="docs-shell reveal">
+      <aside class="docs-sidebar">
+        <h3>On this page</h3>
+        <nav>
+          <a href="#featured-modules">Featured modules</a>
+          <a href="#all-modules">All modules</a>
+          <a href="#author-model">Author model</a>
+          <a href="#module-submission">How to submit</a>
+        </nav>
+      </aside>
+
+      <div class="docs-content">
+        <section id="featured-modules" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Featured</p>
+            <h2>Highlighted module streams</h2>
+          </div>
+          <div
+            class="card-grid card-grid-2"
+            data-component="modules-list"
+            data-source="../data/modules.json"
+            data-limit="2"
+            data-link-prefix="../"
+          ></div>
+        </section>
+
+        <section id="all-modules" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Catalog</p>
+            <h2>All indexed modules</h2>
+          </div>
+          <div
+            class="card-grid card-grid-3"
+            data-component="modules-list"
+            data-source="../data/modules.json"
+            data-link-prefix="../"
+          ></div>
+        </section>
+
+        <section id="author-model" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Publishing Model</p>
+            <h2>How author ownership works</h2>
+          </div>
+          <ol class="flow-list">
+            <li><strong>1. Author owns module repo:</strong> implementation and release cadence stay independent.</li>
+            <li><strong>2. Main site indexes metadata:</strong> users discover modules from a centralized trusted catalog.</li>
+            <li><strong>3. Update feed references module:</strong> critical changes are surfaced through the updates center.</li>
+            <li><strong>4. Community contributes openly:</strong> PRs go to module repos or to this index.</li>
+          </ol>
+        </section>
+
+        <section id="module-submission" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Contributor Workflow</p>
+            <h2>How to add your module</h2>
+          </div>
+          <div class="card-grid card-grid-2">
+            <article class="glass-card">
+              <h3>Step-by-step</h3>
+              <ol class="flow-list">
+                <li><strong>1.</strong> Create your module repository and baseline README.</li>
+                <li><strong>2.</strong> Publish or host your module page (optional but recommended).</li>
+                <li><strong>3.</strong> Add your entry to <span class="mono">data/modules.json</span>.</li>
+                <li><strong>4.</strong> Open a pull request to the main project repository.</li>
+              </ol>
+            </article>
+            <article class="glass-card">
+              <h3>Template and links</h3>
+              <p>
+                Use the standard module page template to keep structure consistent for users and maintainers.
+              </p>
+              <div class="item-links">
+                <a class="text-link" href="./template/">Open module page template</a>
+                <a class="text-link" href="https://github.com/ZeroDayEvil/ai-security-tool/pulls">Submit pull request</a>
+                <a class="text-link" href="https://github.com/ZeroDayEvil/ai-security-tool/issues">Ask a question</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>Module growth is community growth.</strong> Sponsors help us review, index, and support more modules.</p>
+      <p class="footer-links">
+        <a href="https://opencollective.com/ZeroDayEvil">Sponsor</a>
+        <a href="../updates/">Updates center</a>
+        <a href="../downloads/">Downloads</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/animations.js" defer></script>
+  <script src="../assets/js/content-loader.js" defer></script>
+</body>
+</html>

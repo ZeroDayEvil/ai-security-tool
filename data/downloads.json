@@ -1,0 +1,54 @@
+[
+  {
+    "os": "Windows",
+    "arch": "x64",
+    "summary": "Installer and portable package for enterprise and analyst workstations.",
+    "files": [
+      {
+        "label": ".exe Installer",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      },
+      {
+        "label": ".tar.gz Portable",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Recommended for SOC and red-team desktop environments."
+  },
+  {
+    "os": "macOS",
+    "arch": "Apple Silicon",
+    "summary": "Native build for M-series devices with secure defaults and full UI support.",
+    "files": [
+      {
+        "label": ".dmg Package",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Supports M1, M2, and M3 hardware."
+  },
+  {
+    "os": "Linux",
+    "arch": "x64",
+    "summary": "Universal package for servers and operator laptops.",
+    "files": [
+      {
+        "label": ".tar.gz Build",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Best fit for headless and containerized workflows."
+  },
+  {
+    "os": "Android",
+    "arch": "ARM64",
+    "summary": "Mobile build for field testing and quick validation tasks.",
+    "files": [
+      {
+        "label": ".apk Build",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Use trusted sideload policy and verify artifact hash."
+  }
+]
