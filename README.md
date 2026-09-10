@@ -43,22 +43,64 @@
   </p>
   <hr>
 
-  <h2>Проверка безопасности</h2>
-  <a href="https://github.com/ZeroDayVPN/CVE-2026-24291" rel="nofollow"><b>CVE-2026-24291</b></a> 
-<br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-41096-PoC" rel="nofollow"><b>CVE-2026-41096-PoC</b></a> 
-<br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC" rel="nofollow"><b>CVE-2026-20805-PoC</b></a> 
-<br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC" rel="nofollow"><b>CVE-2026-41089-Netlogon-RCE</b></a> 
-<br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research" rel="nofollow"><b>CVE-2026-42978-POC-Research</b></a> 
-<br>
-<a href="https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC" rel="nofollow"><b>CVE-2026-83991-WriteUP-and-PoC</b></a> 
-<br>
-<a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC" rel="nofollow"><b>CVE-2026-50416-writeup-and-PoC</b></a> 
-<br>
-<a href="https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP" rel="nofollow"><b>CVE-2026-66804-CrossDevice-Service-EoP</b></a> 
+<h2>🔍 Модули проверки безопасности и PoC репозитории</h2>
+<p>Коллекция уязвимостей, PoC-скриптов и исследований, поддерживаемая участниками нашего сообщества:</p>
+
+<!-- Категория 1: Критические RCE и Сетевые уязвимости -->
+<details open>
+  <summary><b>🔥 Remote Code Execution (RCE) & Network Vulns</b> <code>4 модуля</code></summary>
+  <br>
+  <ul>
+    <li>
+      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC">CVE-2026-41089</a></b> — <i>Netlogon Remote Code Execution Exploit</i> 
+      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+    </li>
+    <li>
+      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC">CVE-2026-20805</a></b> — <i>Windows Remote Code Execution Proof-of-Concept</i> 
+      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+    </li>
+    <li>
+      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-41096-PoC">CVE-2026-41096</a></b> — <i>Critical RCE Vulnerability Scanner Module</i> 
+      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+    </li>
+    <li>
+      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-24291">CVE-2026-24291</a></b> — <i>Network Protocol Remote Code Execution</i> 
+      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+    </li>
+  </ul>
+</details>
+
+<!-- Категория 2: Повышение привилегий (Privilege Escalation) -->
+<details open>
+  <summary><b>🛡️ Privilege Escalation (EoP) & Services</b> <code>2 модуля</code></summary>
+  <br>
+  <ul>
+    <li>
+      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP">CVE-2026-66804</a></b> — <i>CrossDevice Service Elevation of Privilege</i> 
+      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+    </li>
+    <li>
+      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC">CVE-2026-50416</a></b> — <i>Local Privilege Escalation Writeup & PoC</i> 
+      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+    </li>
+  </ul>
+</details>
+
+<!-- Категория 3: Исследования и Аналитика (Research & Writeups) -->
+<details open>
+  <summary><b>📚 Vulnerability Research & Writeups</b> <code>2 модуля</code></summary>
+  <br>
+  <ul>
+    <li>
+      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research">CVE-2026-42978</a></b> — <i>Deep Technical Analysis & PoC Research</i> 
+      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+    </li>
+    <li>
+      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC">CVE-2026-83991</a></b> — <i>Full WriteUp & Exploitation Demonstration</i> 
+      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+    </li>
+  </ul>
+</details>
 <br>
 
   <h3>💻 Multi-Protocol Terminal & Client</h3>
