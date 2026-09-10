@@ -1,6 +1,6 @@
 <article class="markdown-body entry-content container-lg" itemprop="text">
-  <p align="center"><h1> AI Security Tool<br>Cross-Platform AI-Native Terminal & Supply Chain Scanner</h1></p>
-  <p><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
+ <h1> <p align="center"> AI Security Tool<br>Cross-Platform AI-Native Terminal & Supply Chain Scanner</p></h1>
+  <p align="center"><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
   <hr>
   <p align="center">
     <a href="https://zerodayevil.github.io/ai-security-tool/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
