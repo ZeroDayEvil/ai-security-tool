@@ -1,5 +1,5 @@
 <article class="markdown-body entry-content container-lg" itemprop="text">
-  <h1>🛡️ AI Security Tool — Cross-Platform AI-Native Terminal & Supply Chain Scanner</h1>
+  <p align="center"><h1> AI Security Tool<br>Cross-Platform AI-Native Terminal & Supply Chain Scanner</h1></p>
   <p><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
   <hr>
   <p align="center">
