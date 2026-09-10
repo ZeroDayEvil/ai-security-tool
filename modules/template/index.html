@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Template page for new AI Security Tool modules.">
+  <title>Module Template | AI Security Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-red"></div>
+    <div class="bg-glow bg-glow-cyan"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../../">
+        <span class="brand-mark">ZeroDayVPN</span>
+        <span class="brand-sub">AI Security Tool</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../../">Home</a>
+        <a href="../../updates/">Updates</a>
+        <a href="../../downloads/">Downloads</a>
+        <a href="../" aria-current="page">Modules</a>
+      </nav>
+      <a class="btn btn-outline btn-small" href="https://github.com/ZeroDayEvil/ai-security-tool/pulls">Submit PR</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro reveal">
+      <p class="section-kicker">Template</p>
+      <h1>Module page template</h1>
+      <p>Use this structure to keep every module page clear, trusted, and easy to navigate.</p>
+    </section>
+
+    <div class="docs-shell reveal">
+      <aside class="docs-sidebar">
+        <h3>Template sections</h3>
+        <nav>
+          <a href="#metadata">Metadata</a>
+          <a href="#scope">Scope</a>
+          <a href="#detection">Detection</a>
+          <a href="#mitigation">Mitigation</a>
+          <a href="#references">References</a>
+        </nav>
+      </aside>
+
+      <div class="docs-content">
+        <section id="metadata" class="section">
+          <div class="module-meta">
+            <article class="module-meta-item">
+              <p class="meta-key">Status</p>
+              <p class="meta-value">ACTIVE / ARCHIVED</p>
+            </article>
+            <article class="module-meta-item">
+              <p class="meta-key">Category</p>
+              <p class="meta-value">RCE / EOP / LPE / Web</p>
+            </article>
+            <article class="module-meta-item">
+              <p class="meta-key">Author</p>
+              <p class="meta-value">Team / Handle</p>
+            </article>
+            <article class="module-meta-item">
+              <p class="meta-key">Last update</p>
+              <p class="meta-value">YYYY-MM-DD</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="scope" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Section 1</p>
+            <h2>Scope</h2>
+          </div>
+          <article class="glass-card">
+            <p>Describe affected components, exploitation assumptions, and risk boundaries.</p>
+          </article>
+        </section>
+
+        <section id="detection" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Section 2</p>
+            <h2>Detection</h2>
+          </div>
+          <article class="glass-card">
+            <p>Document repeatable validation steps, safety constraints, and expected evidence.</p>
+          </article>
+        </section>
+
+        <section id="mitigation" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Section 3</p>
+            <h2>Mitigation</h2>
+          </div>
+          <article class="glass-card">
+            <p>List hardening actions, temporary controls, and permanent remediation guidance.</p>
+          </article>
+        </section>
+
+        <section id="references" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Section 4</p>
+            <h2>References</h2>
+          </div>
+          <article class="glass-card">
+            <div class="item-links">
+              <a class="text-link" href="https://github.com/ZeroDayEvil/ai-security-tool">Main repository</a>
+              <a class="text-link" href="../../updates/">Update center</a>
+              <a class="text-link" href="../">Module catalog</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>Template goal:</strong> consistent quality and fast onboarding for module contributors.</p>
+      <p class="footer-links">
+        <a href="../">Back to module catalog</a>
+        <a href="../../">Back to home</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/animations.js" defer></script>
+</body>
+</html>

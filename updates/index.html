@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Security Tool update center: critical advisories, release notes, and module updates.">
+  <title>Updates Center | AI Security Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-red"></div>
+    <div class="bg-glow bg-glow-cyan"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../">
+        <span class="brand-mark">ZeroDayVPN</span>
+        <span class="brand-sub">AI Security Tool</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Updates</a>
+        <a href="../downloads/">Downloads</a>
+        <a href="../modules/">Modules</a>
+      </nav>
+      <a class="btn btn-outline btn-small" href="https://github.com/ZeroDayEvil/ai-security-tool">GitHub</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro reveal">
+      <p class="section-kicker">Updates Center</p>
+      <h1>Security updates, advisories, and release communications</h1>
+      <p>
+        This page is designed as the operational source of truth for changes that impact security posture,
+        module behavior, and release adoption.
+      </p>
+      <p class="banner-note">Recommended workflow: monitor this page, then review linked module repositories for implementation details.</p>
+    </section>
+
+    <div class="docs-shell reveal">
+      <aside class="docs-sidebar">
+        <h3>On this page</h3>
+        <nav>
+          <a href="#critical-advisories">Critical advisories</a>
+          <a href="#feature-and-platform">Feature and platform</a>
+          <a href="#module-updates">Module updates</a>
+          <a href="#all-updates">Complete timeline</a>
+        </nav>
+      </aside>
+
+      <div class="docs-content">
+        <section id="critical-advisories" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Priority</p>
+            <h2>Critical advisories</h2>
+          </div>
+          <div
+            class="list-stack"
+            data-component="updates-list"
+            data-source="../data/updates.json"
+            data-filter="security"
+            data-link-prefix="../"
+          ></div>
+        </section>
+
+        <section id="feature-and-platform" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Product evolution</p>
+            <h2>Feature and platform updates</h2>
+          </div>
+          <div
+            class="list-stack"
+            data-component="updates-list"
+            data-source="../data/updates.json"
+            data-filter="feature"
+            data-link-prefix="../"
+          ></div>
+        </section>
+
+        <section id="module-updates" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Module ecosystem</p>
+            <h2>Module publication and patch cycle</h2>
+          </div>
+          <div
+            class="list-stack"
+            data-component="updates-list"
+            data-source="../data/updates.json"
+            data-filter="module"
+            data-link-prefix="../"
+          ></div>
+        </section>
+
+        <section id="all-updates" class="section">
+          <div class="section-head">
+            <p class="section-kicker">History</p>
+            <h2>Complete update timeline</h2>
+          </div>
+          <div
+            class="list-stack"
+            data-component="updates-list"
+            data-source="../data/updates.json"
+            data-link-prefix="../"
+          ></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>Need binaries?</strong> Go to Downloads for release artifacts by operating system.</p>
+      <p class="footer-links">
+        <a href="../downloads/">Downloads</a>
+        <a href="../modules/">Modules</a>
+        <a href="https://opencollective.com/ZeroDayEvil">Sponsor</a>
+        <a href="https://github.com/ZeroDayEvil/ai-security-tool/issues">Report issue</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/animations.js" defer></script>
+  <script src="../assets/js/content-loader.js" defer></script>
+</body>
+</html>

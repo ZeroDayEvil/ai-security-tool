@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "cve-2026-24291",
+    "name": "CVE-2026-24291",
+    "status": "active",
+    "type": "Privilege Escalation",
+    "updated": "2026-09-05",
+    "summary": "Dedicated stream for exploitability analysis, mitigation validation, and response playbooks.",
+    "author": "ZeroDayVPN",
+    "authorUrl": "https://github.com/ZeroDayVPN",
+    "repo": "https://github.com/ZeroDayVPN/CVE-2026-24291",
+    "page": "modules/cve-2026-24291/"
+  },
+  {
+    "slug": "cve-2026-83991",
+    "name": "CVE-2026-83991 WriteUP and PoC",
+    "status": "active",
+    "type": "Research / PoC",
+    "updated": "2026-08-30",
+    "summary": "Research repository with technical write-up, PoC material, and reproducibility notes.",
+    "author": "ZeroDayVPN",
+    "authorUrl": "https://github.com/ZeroDayVPN",
+    "repo": "https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC",
+    "page": ""
+  },
+  {
+    "slug": "cve-2026-66804",
+    "name": "CVE-2026-66804 CrossDevice Service EoP",
+    "status": "active",
+    "type": "Elevation of Privilege",
+    "updated": "2026-08-28",
+    "summary": "Module track for cross-device service EoP investigation, risk scoring, and hardening guidance.",
+    "author": "ZeroDayVPN",
+    "authorUrl": "https://github.com/ZeroDayVPN",
+    "repo": "https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP",
+    "page": ""
+  },
+  {
+    "slug": "cve-2026-42978",
+    "name": "CVE-2026-42978 PoC Research",
+    "status": "active",
+    "type": "Exploit Research",
+    "updated": "2026-08-23",
+    "summary": "External research stream focused on exploit chain mapping and verification.",
+    "author": "ZeroDayEvil",
+    "authorUrl": "https://github.com/ZeroDayEvil",
+    "repo": "https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research",
+    "page": ""
+  }
+]

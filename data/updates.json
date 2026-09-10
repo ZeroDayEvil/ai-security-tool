@@ -1,0 +1,41 @@
+[
+  {
+    "id": "upd-2026-09-08-stable",
+    "type": "Feature",
+    "version": "v5.3.27",
+    "date": "2026-09-08",
+    "title": "Stable channel hardening and module index refresh",
+    "summary": "Improved module discovery flow, refined release metadata, and hardened default platform routing.",
+    "changelog": "https://github.com/ZeroDayEvil/ai-security-tool/releases",
+    "repo": "https://github.com/ZeroDayEvil/ai-security-tool"
+  },
+  {
+    "id": "upd-2026-09-05-cve-24291",
+    "type": "Security",
+    "version": "v5.3.26",
+    "date": "2026-09-05",
+    "title": "Published CVE-2026-24291 module stream",
+    "summary": "Added dedicated module entry and operational links for CVE-2026-24291 analysis and mitigation tracking.",
+    "page": "modules/cve-2026-24291/",
+    "repo": "https://github.com/ZeroDayVPN/CVE-2026-24291",
+    "advisory": "https://github.com/ZeroDayEvil/ai-security-tool/security"
+  },
+  {
+    "id": "upd-2026-08-31-catalog",
+    "type": "Module",
+    "version": "v5.3.25",
+    "date": "2026-08-31",
+    "title": "Expanded vulnerability module catalog",
+    "summary": "New external module repositories were indexed to keep response workflows independent and scalable.",
+    "repo": "https://github.com/ZeroDayEvil/ai-security-tool"
+  },
+  {
+    "id": "upd-2026-08-24-patch",
+    "type": "Patch",
+    "version": "v5.3.24",
+    "date": "2026-08-24",
+    "title": "Patch cycle for agent orchestration stability",
+    "summary": "Adjusted fallback orchestration paths and improved long-running task behavior under mixed workloads.",
+    "changelog": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+  }
+]

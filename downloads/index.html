@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download AI Security Tool for Windows, macOS, Linux, and mobile platforms.">
+  <title>Downloads | AI Security Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-red"></div>
+    <div class="bg-glow bg-glow-cyan"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../">
+        <span class="brand-mark">ZeroDayVPN</span>
+        <span class="brand-sub">AI Security Tool</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../">Home</a>
+        <a href="../updates/">Updates</a>
+        <a href="./" aria-current="page">Downloads</a>
+        <a href="../modules/">Modules</a>
+      </nav>
+      <a class="btn btn-outline btn-small" href="https://github.com/ZeroDayEvil/ai-security-tool/releases">GitHub Releases</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro reveal">
+      <p class="section-kicker">Distribution</p>
+      <h1>Cross-platform downloads and version history</h1>
+      <p>
+        Get the latest stable build by operating system. For rollback, validation, or forensics workflows,
+        use the release history and legacy builds below.
+      </p>
+    </section>
+
+    <div class="docs-shell reveal">
+      <aside class="docs-sidebar">
+        <h3>On this page</h3>
+        <nav>
+          <a href="#current-builds">Current builds</a>
+          <a href="#quick-install">Quick install</a>
+          <a href="#integrity-verification">Integrity verification</a>
+          <a href="#latest-release">Latest release details</a>
+          <a href="#release-history">Release history</a>
+          <a href="#legacy-builds">Legacy builds</a>
+        </nav>
+      </aside>
+
+      <div class="docs-content">
+        <section id="current-builds" class="section">
+          <div class="section-head">
+            <p class="section-kicker">By Operating System</p>
+            <h2>Download for your platform</h2>
+          </div>
+          <div
+            class="download-grid"
+            data-component="downloads-matrix"
+            data-source="../data/downloads.json"
+          ></div>
+        </section>
+
+        <section id="quick-install" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Automation</p>
+            <h2>One-line install scripts</h2>
+          </div>
+          <div class="card-grid card-grid-2">
+            <article class="glass-card">
+              <h3>Linux / macOS</h3>
+              <p>Bootstrap installation directly from the main repository script.</p>
+              <div class="code-block">
+                <div class="code-head">bash</div>
+                <pre>curl -o- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash</pre>
+              </div>
+            </article>
+            <article class="glass-card">
+              <h3>Windows (PowerShell)</h3>
+              <p>Fetch and run the installer batch script with one command chain.</p>
+              <div class="code-block">
+                <div class="code-head">powershell</div>
+                <pre>Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.bat" -OutFile "one-line-web.bat"
+cmd.exe /c ".\one-line-web.bat"</pre>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="integrity-verification" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Security</p>
+            <h2>Integrity verification workflow</h2>
+          </div>
+          <ol class="flow-list">
+            <li><strong>1.</strong> Download the artifact from official GitHub release links only.</li>
+            <li><strong>2.</strong> Verify SHA-256 checksums from release notes before first execution.</li>
+            <li><strong>3.</strong> Use least-privilege execution mode and isolate test environments.</li>
+            <li><strong>4.</strong> Subscribe to <a class="text-link" href="../updates/">updates</a> for urgent patches and advisories.</li>
+          </ol>
+        </section>
+
+        <section id="latest-release" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Recommended</p>
+            <h2>Latest stable release</h2>
+          </div>
+          <div
+            class="release-grid"
+            data-component="releases-list"
+            data-source="../data/releases.json"
+            data-latest-only="true"
+          ></div>
+        </section>
+
+        <section id="release-history" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Archive</p>
+            <h2>Full release history</h2>
+          </div>
+          <div
+            class="release-grid"
+            data-component="releases-list"
+            data-source="../data/releases.json"
+          ></div>
+        </section>
+
+        <section id="legacy-builds" class="section">
+          <div class="section-head">
+            <p class="section-kicker">Fallback Channel</p>
+            <h2>Legacy stable line</h2>
+          </div>
+          <div
+            class="release-grid"
+            data-component="releases-list"
+            data-source="../data/releases.json"
+            data-filter="legacy"
+          ></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>Security note:</strong> validate artifact integrity before production deployment.</p>
+      <p class="footer-links">
+        <a href="../updates/">Update notes</a>
+        <a href="../modules/">Module catalog</a>
+        <a href="https://opencollective.com/ZeroDayEvil">Sponsor</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/animations.js" defer></script>
+  <script src="../assets/js/content-loader.js" defer></script>
+</body>
+</html>

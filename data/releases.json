@@ -1,0 +1,55 @@
+[
+  {
+    "latest": true,
+    "channel": "stable",
+    "version": "v5.3.27",
+    "date": "2026-09-08",
+    "title": "AI Security Tool 5.3.27",
+    "summary": "Current recommended release with catalog and update-pipeline improvements.",
+    "files": [
+      {
+        "name": "Windows x64 Installer",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      },
+      {
+        "name": "Linux x64 Package",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      },
+      {
+        "name": "macOS ARM64 Package",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Checksums are published per artifact in GitHub Releases."
+  },
+  {
+    "latest": false,
+    "channel": "stable",
+    "version": "v5.3.26",
+    "date": "2026-09-01",
+    "title": "AI Security Tool 5.3.26",
+    "summary": "Security module improvements and patch-level reliability updates.",
+    "files": [
+      {
+        "name": "Release artifacts",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Use this build for compatibility verification if needed."
+  },
+  {
+    "latest": false,
+    "channel": "legacy",
+    "version": "v5.3.24",
+    "date": "2026-08-24",
+    "title": "AI Security Tool 5.3.24",
+    "summary": "Legacy stable line retained for rollback and reproducible test environments.",
+    "files": [
+      {
+        "name": "Release artifacts",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+      }
+    ],
+    "note": "Legacy builds are maintained for regression workflows."
+  }
+]
