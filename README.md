@@ -150,6 +150,7 @@
     <thead>
       <tr>
         <th>Платформа</th>
+         <th>Версия</th>
         <th>Архитектура / Формат</th>
         <th>Ссылка</th>
       </tr>
@@ -157,26 +158,31 @@
     <tbody>
       <tr>
         <td><strong>Windows</strong></td>
+       <td>x64 Installer (.exe)</td>
         <td>x64 Installer (.exe)</td>
         <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64-installer.exe">Скачать .exe</a></td>
       </tr>
       <tr>
         <td><strong>Windows</strong></td>
+       <td>x64 Installer (.exe)</td>
         <td>x64 Portable (.tar.gz)</td>
         <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64.tar.gz">Скачать .tar.gz</a></td>
       </tr>
       <tr>
         <td><strong>macOS</strong></td>
+       <td>x64 Installer (.exe)</td>
         <td>Apple Silicon M1/M2/M3 (.dmg)</td>
         <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-mac-arm64.dmg">Скачать .dmg</a></td>
       </tr>
       <tr>
         <td><strong>Linux</strong></td>
+       <td>x64 Installer (.exe)</td>
         <td>Universal x64 (.tar.gz)</td>
         <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-linux-x64.tar.gz">Скачать .tar.gz</a></td>
       </tr>
       <tr>
         <td><strong>Android</strong></td>
+       <td>x64 Installer (.exe)</td>
         <td>ARM64 APK (.apk)</td>
         <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk">Скачать .apk</a></td>
       </tr>
