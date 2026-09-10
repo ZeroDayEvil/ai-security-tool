@@ -1,0 +1,52 @@
+{
+  "name": "robot-update-app",
+  "version": "1.0.0",
+  "description": "Single page update app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.robot.updateapp",
+    "productName": "RobotUpdate",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "services/**/*",
+      "resources/**/*",
+      "pages/**/*",
+      "scripts/**/*",
+      "styles/**/*",
+      "images/**/*",
+      "package.json"
+    ],
+    "win": {
+      "icon": "images/icon.ico",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "portable": {
+      "artifactName": "RobotUpdate.exe"
+    }
+  },
+  "allowScripts": {
+    "electron@30.5.1": true
+  }
+}
