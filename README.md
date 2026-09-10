@@ -244,7 +244,7 @@ SERVER_PASS=your_strong_password</code></pre>
 
   <h2>🔗 Contact & Support</h2>
   <ul>
-    <li><strong>Официальный сайт:</strong> <a href="https://zerodayevil.github.io/ai-security-tool">zerodayevil.github.io/ai-security-tool</a></li>
+    <li><strong>Официальный сайт:</strong> <a href="https://zerodayevil.com">ZeroDayEvil.com</a></li>
     <li><strong>Web-Demo:</strong> <a href="https://ZeroDyaStart.app">ZeroDyaStart.app</a></li>
     <li><strong>Telegram Admin:</strong> <a href="https://t.me/ZeroDayEvil">@ZeroDayEvil</a></li>
     <li><strong>Telegram Чат:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
