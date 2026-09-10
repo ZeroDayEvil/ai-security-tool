@@ -3,8 +3,8 @@
   <p><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
   <hr>
   <p align="center">
-    <a href="https://github.com/ZeroDayEvil/ai-security-tool/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
-    <a href="https://github.com/ZeroDayEvil/ai-security-tool/actions" rel="nofollow"><img src="https://img.shields.io/github/actions/workflow/status/ZeroDayEvil/ai-security-tool/build.yml?style=for-the-badge&amp;logo=github&amp;label=Build" alt="Build Status" style="max-width: 100%;"></a>
+    <a href="https://zerodayevil.github.io/ai-security-tool/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
+    <a href="https://zerodayevil.github.io/ai-security-tool/actions" rel="nofollow"><img src="https://img.shields.io/github/actions/workflow/status/ZeroDayEvil/ai-security-tool/build.yml?style=for-the-badge&amp;logo=github&amp;label=Build" alt="Build Status" style="max-width: 100%;"></a>
     <a href="https://opencollective.com/ZeroDayEvil" rel="nofollow"><img src="https://img.shields.io/opencollective/all/ZeroDayEvil?style=for-the-badge&amp;logo=open-collective&amp;color=brightgreen" alt="Donations" style="max-width: 100%;"></a>
     <a href="https://t.me/ZeroDyaTool_channel" rel="nofollow"><img src="https://img.shields.io/badge/Telegram-Channel-0088cc?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" alt="Telegram Channel" style="max-width: 100%;"></a>
     <a href="LICENSE" rel="nofollow"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" style="max-width: 100%;"></a>
