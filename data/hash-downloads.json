@@ -1,7 +1,7 @@
 {
   "6.3.20-win-x64-installer.exe": {
-    "label": "Windows x64 Installer v6.3.20",
-    "assetUrl": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/v6.3.20/6.3.20-win-x64-installer.exe",
+    "label": "Windows x64 Installer v5.3.27",
+    "assetUrl": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/Ai-Security-Tool-v5.3.27/Ai-Security-Tool-v5.3.27-win-x64-installer.exe",
     "modulePage": "../modules/cve-2026-41089-netlogon/",
     "mainSite": "../",
     "mainRepo": "https://github.com/ZeroDayEvil/ai-security-tool"
