@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    <a href="https://ZeroDyaStart.app" rel="nofollow"><b>🌐 Демо-версия</b></a> • 
+    <a href="https://zerodayevil.cloud" rel="nofollow"><b>🌐 Демо-версия</b></a> • 
     <a href="https://zerodayevil.github.io/ai-security-tool" rel="nofollow"><b>📚 Сайт проекта</b></a> • 
     <a href="https://t.me/ZeroDyaTool_chat" rel="nofollow"><b>💬 Чат сообщества</b></a>
   </p>
@@ -53,7 +53,7 @@
   <ul>
     <li>
       <b><a href="https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon">CVE-2026-41089</a></b> — <i>Netlogon Remote Code Execution Exploit</i> 
-      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
     </li>
     <li>
       <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC">CVE-2026-20805</a></b> — <i>Windows Remote Code Execution Proof-of-Concept</i> 
@@ -329,7 +329,7 @@ SERVER_PASS=your_strong_password</code></pre>
 
   <h2>🔗 Contact & Support</h2>
   <ul>
-    <li><strong>Официальный сайт:</strong> <a href="https://zerodayevil.com">ZeroDayEvil.com</a></li>
+    <li><strong>Официальный сайт:</strong> <a href="zerodayevil.cloud">ZeroDayEvil.com</a></li>
     <li><strong>Telegram Admin:</strong> <a href="https://t.me/ZeroDayEvil">@ZeroDayEvil</a></li>
     <li><strong>Telegram Чат:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
     <li><strong>Telegram Канал:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
