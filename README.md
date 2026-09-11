@@ -3,8 +3,8 @@
   <p align="center"><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
   <hr>
   <p align="center">
-    <a href="https://zerodayevil.github.io/ai-security-tool/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
-    <a href="https://zerodayevil.github.io/ai-security-tool/actions" rel="nofollow"><img src="https://img.shields.io/github/actions/workflow/status/ZeroDayEvil/ai-security-tool/build.yml?style=for-the-badge&amp;logo=github&amp;label=Build" alt="Build Status" style="max-width: 100%;"></a>
+    <a href="https://zerodayevil.github.io/ai-security-tool/" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
+    <a href="https://zerodayevil.github.io/ai-security-tool/" rel="nofollow"><img src="https://img.shields.io/github/actions/workflow/status/ZeroDayEvil/ai-security-tool/build.yml?style=for-the-badge&amp;logo=github&amp;label=Build" alt="Build Status" style="max-width: 100%;"></a>
     <a href="https://opencollective.com/ZeroDayEvil" rel="nofollow"><img src="https://img.shields.io/opencollective/all/ZeroDayEvil?style=for-the-badge&amp;logo=open-collective&amp;color=brightgreen" alt="Donations" style="max-width: 100%;"></a>
     <a href="https://t.me/ZeroDyaTool_channel" rel="nofollow"><img src="https://img.shields.io/badge/Telegram-Channel-0088cc?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" alt="Telegram Channel" style="max-width: 100%;"></a>
     <a href="LICENSE" rel="nofollow"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" style="max-width: 100%;"></a>
@@ -52,7 +52,7 @@
   <br>
   <ul>
     <li>
-      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20805-POC">CVE-2026-41089</a></b> — <i>Netlogon Remote Code Execution Exploit</i> 
+      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon">CVE-2026-41089</a></b> — <i>Netlogon Remote Code Execution Exploit</i> 
       <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
     </li>
     <li>
@@ -334,7 +334,7 @@ SERVER_PASS=your_strong_password</code></pre>
     <li><strong>Telegram Чат:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
     <li><strong>Telegram Канал:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
      <li><strong>Спонсорам:</strong> <a href="https://paypal.com/pool/9sxFZw5gkx?sr=wccr">PayPal Donats</a></li>
-    <li><strong>Open Collective:</strong> <a href="https://opencollective.com/ZeroDayEvil">opencollective.com/ZeroDayEvil</a></li>
+    <li><strong>Open Collective:</strong> <a href="https://opencollective.com/ZeroDayEvil">ZeroDayEvil</a></li>
   </ul>
   <hr>
 
