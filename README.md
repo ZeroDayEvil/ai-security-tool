@@ -18,10 +18,10 @@
 
   <p align="center">
     <b>Website navigation:</b>
-    <a href="./index.html">Home</a> •
-    <a href="./updates/">Updates</a> •
-    <a href="./downloads/">Downloads</a> •
-    <a href="./modules/">Modules</a>
+    <a href="https://zerodayevil.github.io/ai-security-tool/">Home</a> •
+    <a href="https://zerodayevil.github.io/ai-security-tool/updates/">Updates</a> •
+    <a href="https://zerodayevil.github.io/ai-security-tool/downloads/">Downloads</a> •
+    <a href="https://zerodayevil.github.io/ai-security-tool/modules/">Modules</a>
   </p>
 
   <p align="center">
