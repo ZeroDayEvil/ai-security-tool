@@ -13,16 +13,16 @@
 
   const normalizeHash = () => decodeURIComponent(window.location.hash.replace(/^#/, "").trim());
 
-  const createDownloadAnchor = (url, filename) => {
-    const link = document.createElement("a");
-    link.href = url;
-    link.rel = "noopener noreferrer";
-    if (filename) {
-      link.setAttribute("download", filename);
-    }
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const triggerBackgroundDownload = (url) => {
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
+    iframe.setAttribute("aria-hidden", "true");
+    iframe.src = url;
+    document.body.appendChild(iframe);
+
+    window.setTimeout(() => {
+      iframe.remove();
+    }, 45000);
   };
 
   const closeModal = () => {
@@ -40,9 +40,10 @@
     overlay.innerHTML = `
       <div class="dl-modal" role="dialog" aria-modal="true" aria-label="Download started">
         <h3>Download started</h3>
-        <p><strong>${entry.label || hash}</strong> is being downloaded automatically.</p>
+        <p><strong>${entry.label || hash}</strong> download was triggered in background.</p>
         <p>You can continue with the recommended pages below:</p>
         <div class="item-links">
+          <a class="text-link" href="${entry.assetUrl}" target="_blank" rel="noreferrer">Open download manually</a>
           <a class="text-link" href="${entry.modulePage || "../modules/"}">Open related module page</a>
           <a class="text-link" href="${entry.mainSite || "../"}">Open main website</a>
           <a class="text-link" href="${entry.mainRepo || "https://github.com/ZeroDayEvil/ai-security-tool"}" target="_blank" rel="noreferrer">Open main repository</a>
@@ -72,7 +73,7 @@
       return;
     }
 
-    createDownloadAnchor(entry.assetUrl, hashValue);
+    triggerBackgroundDownload(entry.assetUrl);
     buildModal(entry, hashValue);
   };
 
