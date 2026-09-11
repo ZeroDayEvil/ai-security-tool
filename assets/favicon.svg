@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI Security Tool">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2d4d" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#070b12" />
+  <path d="M32 10l16 8v12c0 11-6.7 20.2-16 24-9.3-3.8-16-13-16-24V18l16-8z" fill="url(#g)" />
+  <path d="M25 35l5 5 9-12" fill="none" stroke="#070b12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
