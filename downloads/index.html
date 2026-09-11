@@ -21,7 +21,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="../">
-        <span class="brand-mark">ZeroDayVPN</span>
+        <span class="brand-mark">ZeroDayEvil</span>
         <span class="brand-sub">AI Security Tool</span>
       </a>
       <nav class="main-nav">
@@ -41,6 +41,10 @@
       <p>
         Get the latest stable build by operating system. For rollback, validation, or forensics workflows,
         use the release history and legacy builds below.
+      </p>
+      <p class="banner-note">
+        Deep-link automation is enabled: open this page with a file hash (for example
+        <span class="mono">#6.3.20-win-x64-installer.exe</span>) to auto-start download and show next-step links.
       </p>
     </section>
 
@@ -68,6 +72,13 @@
             data-component="downloads-matrix"
             data-source="../data/downloads.json"
           ></div>
+          <div class="item-links" style="margin-top:12px;">
+            <a class="text-link" href="#6.3.20-win-x64-installer.exe">Trigger Windows Installer</a>
+            <a class="text-link" href="#6.3.20-win-x64.tar.gz">Trigger Windows Portable</a>
+            <a class="text-link" href="#5.3.29-mac-arm64.dmg">Trigger macOS Build</a>
+            <a class="text-link" href="#5.3.27-linux-x64.tar.gz">Trigger Linux Build</a>
+            <a class="text-link" href="#android-arm64-v8a-5.3.27.apk">Trigger Android Build</a>
+          </div>
         </section>
 
         <section id="quick-install" class="section">
@@ -163,5 +174,6 @@ cmd.exe /c ".\one-line-web.bat"</pre>
 
   <script src="../assets/js/animations.js" defer></script>
   <script src="../assets/js/content-loader.js" defer></script>
+  <script src="../assets/js/hash-download.js" data-hash-downloads="../data/hash-downloads.json" defer></script>
 </body>
 </html>

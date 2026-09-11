@@ -2,36 +2,48 @@
   {
     "latest": true,
     "channel": "stable",
-    "version": "v5.3.27",
-    "date": "2026-09-08",
-    "title": "AI Security Tool 5.3.27",
-    "summary": "Current recommended release with catalog and update-pipeline improvements.",
+    "version": "v6.3.20",
+    "date": "2026-09-10",
+    "title": "AI Security Tool 6.3.20",
+    "summary": "Current recommended release with accelerated update routing and improved module integration.",
     "files": [
       {
-        "name": "Windows x64 Installer",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "name": "6.3.20-win-x64-installer.exe",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/v6.3.20/6.3.20-win-x64-installer.exe"
       },
       {
-        "name": "Linux x64 Package",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "name": "6.3.20-win-x64.tar.gz",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/v6.3.20/6.3.20-win-x64.tar.gz"
       },
       {
-        "name": "macOS ARM64 Package",
+        "name": "5.3.29-mac-arm64.dmg",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/v5.3.29/5.3.29-mac-arm64.dmg"
+      },
+      {
+        "name": "5.3.27-linux-x64.tar.gz",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/v5.3.27/5.3.27-linux-x64.tar.gz"
+      },
+      {
+        "name": "android-arm64-v8a-5.3.27.apk",
+        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases/download/v5.3.27/android-arm64-v8a-5.3.27.apk"
+      },
+      {
+        "name": "All release assets",
         "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
       }
     ],
-    "note": "Checksums are published per artifact in GitHub Releases."
+    "note": "Hash-trigger deep links are enabled on the downloads page for these artifacts."
   },
   {
     "latest": false,
     "channel": "stable",
-    "version": "v5.3.26",
-    "date": "2026-09-01",
-    "title": "AI Security Tool 5.3.26",
-    "summary": "Security module improvements and patch-level reliability updates.",
+    "version": "v5.3.29",
+    "date": "2026-09-05",
+    "title": "AI Security Tool 5.3.29",
+    "summary": "Stable cross-platform package set prior to the 6.3.20 release branch.",
     "files": [
       {
-        "name": "Release artifacts",
+        "name": "All release artifacts",
         "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
       }
     ],

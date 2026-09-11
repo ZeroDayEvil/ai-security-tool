@@ -6,11 +6,11 @@
     "files": [
       {
         "label": ".exe Installer",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "url": "#6.3.20-win-x64-installer.exe"
       },
       {
         "label": ".tar.gz Portable",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "url": "#6.3.20-win-x64.tar.gz"
       }
     ],
     "note": "Recommended for SOC and red-team desktop environments."
@@ -22,7 +22,7 @@
     "files": [
       {
         "label": ".dmg Package",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "url": "#5.3.29-mac-arm64.dmg"
       }
     ],
     "note": "Supports M1, M2, and M3 hardware."
@@ -34,7 +34,7 @@
     "files": [
       {
         "label": ".tar.gz Build",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "url": "#5.3.27-linux-x64.tar.gz"
       }
     ],
     "note": "Best fit for headless and containerized workflows."
@@ -46,7 +46,7 @@
     "files": [
       {
         "label": ".apk Build",
-        "url": "https://github.com/ZeroDayEvil/ai-security-tool/releases"
+        "url": "#android-arm64-v8a-5.3.27.apk"
       }
     ],
     "note": "Use trusted sideload policy and verify artifact hash."

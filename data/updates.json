@@ -1,11 +1,22 @@
 [
   {
+    "id": "upd-2026-09-10-cve-41089-page",
+    "type": "Module",
+    "version": "v6.3.20",
+    "date": "2026-09-10",
+    "title": "Published CVE-2026-41089 Netlogon module page",
+    "summary": "Released a full-featured sample page for third-party module authors with enforced interlinking and platform install guidance.",
+    "page": "modules/cve-2026-41089-netlogon/",
+    "repo": "https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon",
+    "advisory": "https://github.com/ZeroDayEvil/ai-security-tool/security"
+  },
+  {
     "id": "upd-2026-09-08-stable",
     "type": "Feature",
-    "version": "v5.3.27",
-    "date": "2026-09-08",
-    "title": "Stable channel hardening and module index refresh",
-    "summary": "Improved module discovery flow, refined release metadata, and hardened default platform routing.",
+    "version": "v6.3.20",
+    "date": "2026-09-10",
+    "title": "6.3.20 release channel activated",
+    "summary": "Published a unified release set with hash-trigger deep links and improved cross-page update routing.",
     "changelog": "https://github.com/ZeroDayEvil/ai-security-tool/releases",
     "repo": "https://github.com/ZeroDayEvil/ai-security-tool"
   },

@@ -6,10 +6,22 @@
     "type": "Privilege Escalation",
     "updated": "2026-09-05",
     "summary": "Dedicated stream for exploitability analysis, mitigation validation, and response playbooks.",
-    "author": "ZeroDayVPN",
-    "authorUrl": "https://github.com/ZeroDayVPN",
+    "author": "ZeroDayEvil",
+    "authorUrl": "https://github.com/ZeroDayEvil",
     "repo": "https://github.com/ZeroDayVPN/CVE-2026-24291",
     "page": "modules/cve-2026-24291/"
+  },
+  {
+    "slug": "cve-2026-41089-netlogon",
+    "name": "CVE-2026-41089 Netlogon",
+    "status": "active",
+    "type": "Network RCE",
+    "updated": "2026-09-10",
+    "summary": "Module page template sample with full vulnerability context, usage guidance, and required interlinking.",
+    "author": "ZeroDayEvil",
+    "authorUrl": "https://github.com/ZeroDayEvil",
+    "repo": "https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon",
+    "page": "modules/cve-2026-41089-netlogon/"
   },
   {
     "slug": "cve-2026-83991",
@@ -18,8 +30,8 @@
     "type": "Research / PoC",
     "updated": "2026-08-30",
     "summary": "Research repository with technical write-up, PoC material, and reproducibility notes.",
-    "author": "ZeroDayVPN",
-    "authorUrl": "https://github.com/ZeroDayVPN",
+    "author": "ZeroDayEvil",
+    "authorUrl": "https://github.com/ZeroDayEvil",
     "repo": "https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC",
     "page": ""
   },
@@ -30,8 +42,8 @@
     "type": "Elevation of Privilege",
     "updated": "2026-08-28",
     "summary": "Module track for cross-device service EoP investigation, risk scoring, and hardening guidance.",
-    "author": "ZeroDayVPN",
-    "authorUrl": "https://github.com/ZeroDayVPN",
+    "author": "ZeroDayEvil",
+    "authorUrl": "https://github.com/ZeroDayEvil",
     "repo": "https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP",
     "page": ""
   },
