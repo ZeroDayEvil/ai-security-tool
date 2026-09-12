@@ -1,7 +1,13 @@
 <article class="markdown-body entry-content container-lg" itemprop="text">
- <h1> <p align="center"> AI Security Tool<br>Cross-Platform AI-Native Terminal & Supply Chain Scanner</p></h1>
+  <h1>
+    <p align="center">
+      AI Security Tool<br>
+      Cross-Platform AI-Native Terminal & Supply Chain Scanner
+    </p>
+  </h1>
   <p align="center"><strong>Next-Gen AI Security Ecosystem, Multi-Protocol Terminal & Autonomous Agent Suite</strong></p>
   <hr>
+
   <p align="center">
     <a href="https://zerodayevil.github.io/ai-security-tool/downloads/#current-builds" rel="nofollow"><img src="https://img.shields.io/github/v/release/ZeroDayEvil/ai-security-tool?style=for-the-badge&amp;logo=github&amp;color=blue" alt="Latest Release" style="max-width: 100%;"></a>
     <a href="https://zerodayevil.github.io/ai-security-tool/downloads/#current-builds" rel="nofollow"><img src="https://img.shields.io/github/actions/workflow/status/ZeroDayEvil/ai-security-tool/build.yml?style=for-the-badge&amp;logo=github&amp;label=Build" alt="Build Status" style="max-width: 100%;"></a>
@@ -11,13 +17,13 @@
   </p>
 
   <p align="center">
-    <a href="https://zerodayevil.cloud" rel="nofollow"><b>🌐 Демо-версия</b></a> • 
-    <a href="https://zerodayevil.github.io/ai-security-tool" rel="nofollow"><b>📚 Сайт проекта</b></a> • 
-    <a href="https://t.me/ZeroDyaTool_chat" rel="nofollow"><b>💬 Чат сообщества</b></a>
+    <a href="https://zerodayevil.cloud" rel="nofollow"><b>🌐 Web Demo</b></a> • 
+    <a href="https://zerodayevil.github.io/ai-security-tool" rel="nofollow"><b>📚 Project Website</b></a> • 
+    <a href="https://t.me/ZeroDyaTool_chat" rel="nofollow"><b>💬 Community Chat</b></a>
   </p>
 
   <p align="center">
-    <b>Website navigation:</b>
+    <b>Website Navigation:</b>
     <a href="https://zerodayevil.github.io/ai-security-tool/">Home</a> •
     <a href="https://zerodayevil.github.io/ai-security-tool/updates/">Updates</a> •
     <a href="https://zerodayevil.github.io/ai-security-tool/downloads/">Downloads</a> •
@@ -31,167 +37,175 @@
 
   <h2>🧠 Conceptual Overview</h2>
   <p>
-    <strong>AI Security Tool</strong> — это кроссплатформенный инструмент с открытым исходным кодом, созданный на стыке традиционного администрирования и современной информационной безопасности. Он объединяет мультипротокольный комбайн для подключения (SSH, RDP, VNC), функционал глубокого анализа цепочек поставок (Supply Chain Security, CVE & SBOM) и автономную экосистему из <strong>12+ ИИ-агентов</strong>.
+    <strong>AI Security Tool</strong> is an open-source, cross-platform ecosystem designed at the intersection of traditional system administration and modern cybersecurity. It combines a multi-protocol connectivity suite (SSH, RDP, VNC), deep Supply Chain Security analysis (CVE & SBOM auditing), and an autonomous ecosystem powered by <strong>12+ AI Agents</strong>.
     <br><br>
-    Инструмент устраняет необходимость переключаться между десятками утилит при проведении аудита безопасности, решения задач Red Team, Pentest или CTF. Приложение доступно как в десктопном исполнении (<strong>Linux, macOS, Windows, Android, iOS, HarmonyOS</strong>), так и в виде полноценного <strong>Web-интерфейса</strong>.
+    The tool eliminates the need to switch between dozens of utilities during security audits, Red Team operations, penetration testing, or CTF challenges. Available both as a desktop application (<strong>Linux, macOS, Windows, Android, iOS, HarmonyOS</strong>) and a fully featured <strong>Web Interface</strong>.
   </p>
 
   <h3>🎯 Core Philosophy</h3>
   <p>
     <em>"Bridge the gap between execution, intelligence, and supply chain audit."</em><br>
-    Мы создали AI Security Tool, чтобы избавиться от рутинного ручного анализа. Взамен разрозненных скриптов инструмент предоставляет единую AI-Native платформу, самостоятельно сопоставляющую контекст уязвимостей, подбирающую параметры и автоматизирующую процессы аудита.
+    We built AI Security Tool to replace tedious manual workflows with a unified AI-Native platform that automatically correlates vulnerability contexts, tunes parameters, and automates auditing pipelines.
   </p>
   <hr>
 
-<h2>🔍 Модули проверки безопасности и PoC репозитории</h2>
-<p>Коллекция уязвимостей, PoC-скриптов и исследований, поддерживаемая участниками нашего сообщества:</p>
+  <h2>🔍 Security Audit Modules & PoC Repositories</h2>
+  <p>A curated collection of vulnerability scanners, PoC exploits, and technical research maintained by our community:</p>
 
-<!-- Категория 1: Критические RCE и Сетевые уязвимости -->
-<details open>
-  <summary><b>🔥 Remote Code Execution (RCE) & Network Vulns</b> <code>4 модуля</code></summary>
-  <br>
-  <ul>
-    <li>
-      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon">CVE-2026-41089</a></b> — <i>Netlogon Remote Code Execution Exploit</i> 
-      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
-    </li>
-    <li>
-      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC">CVE-2026-20805</a></b> — <i>Windows Remote Code Execution Proof-of-Concept</i> 
-      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
-    </li>
-    <li>
-      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-41096-PoC">CVE-2026-41096</a></b> — <i>Critical RCE Vulnerability Scanner Module</i> 
-      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
-    </li>
-    <li>
-      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-24291">CVE-2026-24291</a></b> — <i>Network Protocol Remote Code Execution</i> 
-      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
-    </li>
-  </ul>
-</details>
+  <!-- Category 1: Remote Code Execution & Network Vulns -->
+  <details open>
+    <summary><b>🔥 Remote Code Execution (RCE) & Network Vulns</b> <code>5 modules</code></summary>
+    <br>
+    <ul>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-21858-n8n-FullChain">CVE-2026-21858</a></b> — <i>n8n Full Chain Unauthenticated RCE (Ni8mare)</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayVPN/CVE-2026-41089-Netlogon">CVE-2026-41089</a></b> — <i>Netlogon Remote Code Execution Exploit</i> 
+        <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20805-PoC">CVE-2026-20805</a></b> — <i>Windows Remote Code Execution Proof-of-Concept</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-41096-PoC">CVE-2026-41096</a></b> — <i>Critical RCE Vulnerability Scanner Module</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayVPN/CVE-2026-24291">CVE-2026-24291</a></b> — <i>Network Protocol Remote Code Execution</i> 
+        <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+      </li>
+    </ul>
+  </details>
 
-<!-- Категория 2: Повышение привилегий (Privilege Escalation) -->
-<details open>
-  <summary><b>🛡️ Privilege Escalation (EoP) & Services</b> <code>2 модуля</code></summary>
-  <br>
-  <ul>
-    <li>
-      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP">CVE-2026-66804</a></b> — <i>CrossDevice Service Elevation of Privilege</i> 
-      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
-    </li>
-    <li>
-      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC">CVE-2026-50416</a></b> — <i>Local Privilege Escalation Writeup & PoC</i> 
-      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
-    </li>
-  </ul>
-</details>
+  <!-- Category 2: Privilege Escalation -->
+  <details open>
+    <summary><b>🛡️ Privilege Escalation (EoP) & Services</b> <code>3 modules</code></summary>
+    <br>
+    <ul>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-54121-Certighost">CVE-2026-54121</a></b> — <i>AD CS Certighost Domain Controller Impersonation</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayVPN/CVE-2026-66804-CrossDevice-Service-EoP">CVE-2026-66804</a></b> — <i>CrossDevice Service Elevation of Privilege</i> 
+        <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC">CVE-2026-50416</a></b> — <i>Local Privilege Escalation Writeup & PoC</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+    </ul>
+  </details>
 
-<!-- Категория 3: Исследования и Аналитика (Research & Writeups) -->
-<details open>
-  <summary><b>📚 Vulnerability Research & Writeups</b> <code>2 модуля</code></summary>
+  <!-- Category 3: Research & Writeups -->
+  <details open>
+    <summary><b>📚 Vulnerability Research & Writeups</b> <code>2 modules</code></summary>
+    <br>
+    <ul>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research">CVE-2026-42978</a></b> — <i>Deep Technical Analysis & PoC Research</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC">CVE-2026-83991</a></b> — <i>Full WriteUp & Exploitation Demonstration</i> 
+        <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
+      </li>
+    </ul>
+  </details>
   <br>
-  <ul>
-    <li>
-      <b><a href="https://github.com/ZeroDayEvil/CVE-2026-42978-PoC-Research">CVE-2026-42978</a></b> — <i>Deep Technical Analysis & PoC Research</i> 
-      <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
-    </li>
-    <li>
-      <b><a href="https://github.com/ZeroDayVPN/CVE-2026-83991-WriteUP-and-PoC">CVE-2026-83991</a></b> — <i>Full WriteUp & Exploitation Demonstration</i> 
-      <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
-    </li>
-  </ul>
-</details>
-<br>
 
   <h3>💻 Multi-Protocol Terminal & Client</h3>
   <ul>
-    <li><strong>Поддержка протоколов:</strong> SSH, SFTP, Telnet, Serial Port, RDP, VNC, SPICE, FTP.</li>
-    <li><strong>UI & Кастомизация:</strong> Прозрачность окна (macOS, Windows), пользовательские темы и фоновые изображения.</li>
-    <li><strong>Удобство управления:</strong>
+    <li><strong>Supported Protocols:</strong> SSH, SFTP, Telnet, Serial Port, RDP, VNC, SPICE, FTP.</li>
+    <li><strong>UI & Customization:</strong> Window transparency (macOS, Windows), custom themes, and background images.</li>
+    <li><strong>Usability & Workflow:</strong>
       <ul>
-        <li>Вызываемый терминал по горячей клавише (Guake-style, по умолчанию <code>Ctrl + 2</code>).</li>
-        <li>Прямое редактирование удаленных файлов по двойному клику через SFTP.</li>
-        <li>Мульти-ввод (одновременная трансляция команд на несколько сессий).</li>
-        <li>SSH-туннелирование, поддержка ключей/паролей, глобальные и сессионные прокси.</li>
-        <li>Синхронизация настроек и закладок через GitHub Gist / Gitee Snippets.</li>
+        <li>Guake-style pop-up terminal triggered via global hotkey (default: <code>Ctrl + 2</code>).</li>
+        <li>Direct remote file editing via SFTP with a double-click.</li>
+        <li>Multi-input broadcast (transmit commands to multiple active sessions simultaneously).</li>
+        <li>SSH tunneling, SSH key/password authentication, global and session-specific proxy support.</li>
+        <li>Synchronization of bookmarks, themes, and quick commands via GitHub Gist / Gitee Snippets.</li>
       </ul>
     </li>
   </ul>
 
   <h3>⚡ Advanced Capabilities</h3>
   <ul>
-    <li><strong>Интеллектуальное кэширование:</strong> Ускорение повторных анализов с помощью LRU-алгоритмов.</li>
-    <li><strong>Real-Time Process Manager:</strong> Оперативный мониторинг и управление процессами системы.</li>
-    <li><strong>API Security Testing:</strong> Встроенные модули для тестирования GraphQL, JWT и REST API.</li>
-    <li><strong>LLM Integration:</strong> Интеграция с DeepSeek, OpenAI и другими провайдерами для автоподсказа команд, генерации скриптов и интерпретации вывода.</li>
+    <li><strong>Intelligent Caching:</strong> Acceleration of repeated security analysis using LRU algorithms.</li>
+    <li><strong>Real-Time Process Manager:</strong> Live process monitoring and execution control.</li>
+    <li><strong>API Security Testing:</strong> Built-in diagnostic modules for GraphQL, JWT, and REST APIs.</li>
+    <li><strong>LLM Integration:</strong> Built-in AI assistant supporting DeepSeek, OpenAI, and custom APIs for command suggestions, script generation, and terminal output analysis.</li>
   </ul>
   <hr>
 
   <h2>🤖 Specialized AI-Agents Suite</h2>
-  <p>Для автоматизации сложных сценариев аудита в систему внедрены специализированные автономные агенты:</p>
+  <p>Dedicated autonomous agents integrated into the system for automating complex audit scenarios:</p>
 
   <table>
     <thead>
       <tr>
-        <th>Агент</th>
-        <th>Назначение</th>
-        <th>Тип задачи</th>
+        <th>Agent</th>
+        <th>Purpose</th>
+        <th>Task Category</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><code>IntelligentDecisionEngine</code></td>
-        <td>Автоматический выбор инструментов и контекстная оптимизация параметров</td>
+        <td>Automated tool selection and contextual parameter tuning</td>
         <td>🧠 Core Logic</td>
       </tr>
       <tr>
         <td><code>BugBountyWorkflowManager</code></td>
-        <td>Управление рабочими процессами поиска уязвимостей в рамках Bug Bounty</td>
+        <td>Workflow management for reconnaissance and vulnerability discovery</td>
         <td>🎯 Pentest / Recon</td>
       </tr>
       <tr>
         <td><code>CTFWorkflowManager</code></td>
-        <td>Автоматизация и поддержка решения соревновательных задач CTF</td>
+        <td>Automation and support for solving CTF challenges</td>
         <td>🚩 CTF Automation</td>
       </tr>
       <tr>
         <td><code>CVEIntelligenceManager</code></td>
-        <td>Глубокий анализ уязвимостей и сбор Threat Intelligence</td>
+        <td>Deep vulnerability research and Threat Intelligence gathering</td>
         <td>🔍 Threat Intel</td>
       </tr>
       <tr>
         <td><code>VulnerabilityCorrelator</code></td>
-        <td>Обнаружение и построение сложных цепочек атак (Attack Chains)</td>
+        <td>Identification and construction of complex multi-stage Attack Chains</td>
         <td>🔗 Correlation</td>
       </tr>
       <tr>
         <td><code>TechnologyDetector</code></td>
-        <td>Идентификация полного технологического стека целевой системы</td>
+        <td>Full tech stack identification and service fingerprinting</td>
         <td>🌐 Fingerprinting</td>
       </tr>
       <tr>
         <td><code>RateLimitDetector</code></td>
-        <td>Обнаружение и автоматический обход ограничений частоты запросов</td>
+        <td>Detection and automated evasion of rate-limiting mechanisms</td>
         <td>⚡ Bypass & Evasion</td>
       </tr>
       <tr>
         <td><code>FailureRecoverySystem</code></td>
-        <td>Обработка сбоев инструментария и автоматическое восстановление</td>
+        <td>Automated error handling and tool recovery pipeline</td>
         <td>🛡 System Resilience</td>
       </tr>
       <tr>
         <td><code>PerformanceMonitor</code></td>
-        <td>Мониторинг ресурсов и оптимизация системной нагрузки</td>
+        <td>Resource monitoring and system load optimization</td>
         <td>📊 Resource Control</td>
       </tr>
       <tr>
         <td><code>ParameterOptimizer</code></td>
-        <td>Контекстно-зависимая подборка параметров фаззинга и сканирования</td>
+        <td>Context-aware parameter tuning for fuzzing and scanning tools</td>
         <td>⚙️ Fuzzing Tuning</td>
       </tr>
       <tr>
         <td><code>GracefulDegradation</code></td>
-        <td>Обеспечение отказоустойчивости при недоступности внешних сервисов</td>
+        <td>Ensures fault tolerance during external service downtime</td>
         <td>🔄 Fault Tolerance</td>
       </tr>
     </tbody>
@@ -216,22 +230,22 @@
   <table>
     <thead>
       <tr>
-        <th>ОС / Платформа</th>
-        <th>Версия</th>
-        <th>Архитектура / Формат</th>
-        <th>Дата обновления</th>
-        <th>Статус</th>
-        <th>Загрузка</th>
+        <th>OS / Platform</th>
+        <th>Version</th>
+        <th>Architecture / Format</th>
+        <th>Release Date</th>
+        <th>Status</th>
+        <th>Download Link</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><strong>🪟 Windows</strong></td>
-        <td><code>v5.3.27</code></td>
+        <td><code>v6.3.20</code></td>
         <td>x64 Installer (.exe)</td>
-        <td>2026-09-11</td>
+        <td>2026-09-08</td>
         <td>🟢 Latest</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64-installer.exe"><strong>Скачать .exe</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64-installer.exe"><strong>Download .exe</strong></a></td>
       </tr>
       <tr>
         <td><strong>🪟 Windows</strong></td>
@@ -239,7 +253,7 @@
         <td>x64 Portable (.tar.gz)</td>
         <td>2026-09-08</td>
         <td>🟢 Latest</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64.tar.gz"><strong>Скачать .tar.gz</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64.tar.gz"><strong>Download .tar.gz</strong></a></td>
       </tr>
       <tr>
         <td><strong>🍏 macOS</strong></td>
@@ -247,7 +261,7 @@
         <td>Apple Silicon M1/M2/M3 (.dmg)</td>
         <td>2026-09-05</td>
         <td>🟢 Stable</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.29-mac-arm64.dmg"><strong>Скачать .dmg</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.29-mac-arm64.dmg"><strong>Download .dmg</strong></a></td>
       </tr>
       <tr>
         <td><strong>🐧 Linux</strong></td>
@@ -255,7 +269,7 @@
         <td>Universal x64 (.tar.gz)</td>
         <td>2026-09-01</td>
         <td>🟢 Stable</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.27-linux-x64.tar.gz"><strong>Скачать .tar.gz</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.27-linux-x64.tar.gz"><strong>Download .tar.gz</strong></a></td>
       </tr>
       <tr>
         <td><strong>🤖 Android</strong></td>
@@ -263,16 +277,16 @@
         <td>ARM64 APK (.apk)</td>
         <td>2026-09-01</td>
         <td>🟢 Stable</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk"><strong>Скачать .apk</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk"><strong>Download .apk</strong></a></td>
       </tr>
     </tbody>
   </table>
 
   <h3>🧪 One-Line Installation Scripts</h3>
-  <p>Быстрая установка и запуск развертывания одной командой:</p>
+  <p>Fast deployment via command-line installation scripts:</p>
   <p><strong>Linux / macOS:</strong></p>
   <pre><code class="language-bash">curl -o- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash
-# или через wget:
+# or using wget:
 wget -qO- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash</code></pre>
 
   <p><strong>Windows (PowerShell / CMD):</strong></p>
@@ -280,60 +294,60 @@ wget -qO- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/sc
 cmd.exe /c ".\one-line-web.bat"</code></pre>
 
   <h3>🛠 Build from Source</h3>
-  <pre><code class="language-bash"># Клонирование репозитория
+  <pre><code class="language-bash"># Clone repository
 git clone https://github.com/ZeroDayEvil/ai-security-tool.git
 cd ai-security-tool
 
-# Установка зависимостей и сборка
+# Install dependencies and build
 npm install
 npm run build
 
-# Запуск в Production-режиме
+# Run in production mode
 npm run prod
-# или через скрипт: ./build/bin/run-prod.sh</code></pre>
-  <p>После запуска откройте браузер: <code>http://127.0.0.1:5577</code></p>
+# or via script: ./build/bin/run-prod.sh</code></pre>
+  <p>Once started, open your browser at: <code>http://127.0.0.1:5577</code></p>
 
   <h3>🌐 Server Deployment & Configuration</h3>
-  <p>При развертывании приложения в публичной сети настройте файл <code>.env</code>:</p>
-  <pre><code class="language-text">ENABLE_AUTH=1                   # Включить авторизацию по паролю
-DISABLE_LOCAL_TERMINAL=1        # Отключить доступ к локальному терминалу сервера
+  <p>When hosting on external or public networks, configure environment variables in your <code>.env</code> file:</p>
+  <pre><code class="language-text">ENABLE_AUTH=1                   # Enable password authentication
+DISABLE_LOCAL_TERMINAL=1        # Disable direct access to local server terminal
 SERVER_SECRET=your_server_secret_key
 SERVER_PASS=your_strong_password</code></pre>
-  <p>Запуск сервиса:</p>
+  <p>Start service:</p>
   <pre><code class="language-bash">./run-ai-security-tool-web.sh</code></pre>
-  <p><em>Готовые конфиги для Nginx/SSL доступны в директории <code>examples/nginx.conf</code>.</em></p>
+  <p><em>Example configurations for Nginx and SSL are provided in <code>examples/nginx.conf</code>.</em></p>
   <hr>
 
   <h2>⚖️ License & Legal Disclaimer</h2>
   <h3>🚨 Security & Compliance Notice</h3>
   <blockquote>
     <p>
-      <strong>ВАЖНО: Инструмент предоставляет ИИ-агентам доступ к вызову системных команд.</strong><br>
-      • <strong>Контроль действий:</strong> Всегда отслеживайте работу ИИ-агентов через панель мониторинга в реальном времени.<br>
-      • <strong>Минимизация привилегий:</strong> Запускайте инструмент исключительно с минимально необходимыми правами в системе.<br>
-      • <strong>Сетевая безопасность:</strong> Обязательно активируйте авторизацию (<code>ENABLE_AUTH=1</code>) и отключайте локальный терминал (<code>DISABLE_LOCAL_TERMINAL=1</code>) при публикации Web-интерфейса во внешних сетях.<br>
-      Использование утилиты на сторонних объектах без письменного разрешения владельца является нелегальным. Разработчики не несут ответственности за возможный ущерб.
+      <strong>IMPORTANT: This tool grants AI Agents capability to execute system commands.</strong><br>
+      • <strong>Action Control:</strong> Always monitor AI Agent activities via the real-time dashboard.<br>
+      • <strong>Least Privilege:</strong> Execute the application strictly with the minimum necessary system permissions.<br>
+      • <strong>Network Security:</strong> Always enable authentication (<code>ENABLE_AUTH=1</code>) and disable local terminal access (<code>DISABLE_LOCAL_TERMINAL=1</code>) when exposing the Web interface externally.<br>
+      Running this tool against unauthorized systems is illegal. The developers assume no liability for misuse or system damage.
     </p>
   </blockquote>
   <hr>
 
   <h2>🔄 Contribution & Community</h2>
-  <p>Мы приветствуем любой вклад в развитие проекта! Основные направления:</p>
+  <p>We welcome contributions from the cybersecurity community! Key contribution areas:</p>
   <ol>
-    <li><strong>ИИ-Интеграции:</strong> Подключение новых LLM-провайдеров и расширение возможностей агентов.</li>
-    <li><strong>Security Tools:</strong> Интеграция сторонних CLI-сканеров и парсеров.</li>
-    <li><strong>Оптимизация:</strong> Повышение скорости работы парсеров и эффективности кэширования.</li>
-    <li><strong>Документация:</strong> Написание гайдов, переводы и CI/CD шаблоны.</li>
+    <li><strong>AI Integrations:</strong> Adding new LLM providers and developing specialized security agents.</li>
+    <li><strong>Security Tools:</strong> Integrating third-party CLI scanners and custom parsers.</li>
+    <li><strong>Optimization:</strong> Improving parser speed, caching logic, and resource consumption.</li>
+    <li><strong>Documentation:</strong> Writing guides, research papers, and localized translations.</li>
   </ol>
   <hr>
 
   <h2>🔗 Contact & Support</h2>
   <ul>
-    <li><strong>Официальный сайт:</strong> <a href="zerodayevil.cloud">ZeroDayEvil.com</a></li>
+    <li><strong>Official Website:</strong> <a href="https://zerodayevil.cloud">zerodayevil.cloud</a></li>
     <li><strong>Telegram Admin:</strong> <a href="https://t.me/ZeroDayEvil">@ZeroDayEvil</a></li>
-    <li><strong>Telegram Чат:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
-    <li><strong>Telegram Канал:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
-     <li><strong>Спонсорам:</strong> <a href="https://paypal.com/pool/9sxFZw5gkx?sr=wccr">PayPal Donats</a></li>
+    <li><strong>Telegram Chat:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
+    <li><strong>Telegram Channel:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
+    <li><strong>Sponsor Project:</strong> <a href="https://paypal.com/pool/9sxFZw5gkx?sr=wccr">PayPal Donations</a></li>
     <li><strong>Open Collective:</strong> <a href="https://opencollective.com/ZeroDayEvil">ZeroDayEvil</a></li>
   </ul>
   <hr>
