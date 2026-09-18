@@ -1,74 +1,37 @@
 @echo off
-:: Устанавливаем кодировку UTF-8 для корректного отображения текста
 chcp 65001 >nul
 setlocal enabledelayedexpansion
 
 echo ========================================================
-echo Автоматическая установка компонентов и загрузка файлов
+echo Автоматическая установка (Пользовательский режим)
 echo ========================================================
 echo.
 
-:: 0. Проверка прав Администратора
-net session >nul 2>&1
+:: 1. Проверка наличия winget
+where winget >nul 2>nul
 if %errorlevel% neq 0 (
-    echo [ОШИБКА] Скрипт запущен без прав Администратора!
-    echo Пожалуйста, нажмите по файлу правой кнопкой мыши и выберите "Запуск от имени администратора".
-    echo.
+    echo [ОШИБКА] Winget не найден. 
+    echo Для установки в пользовательском режиме требуется современная сборка Windows 10/11 с установленным winget.
     pause
     exit /b
 )
 
-:: 1. Проверка наличия winget и настройка fallback на Chocolatey
-where winget >nul 2>nul
-if %errorlevel% equ 0 (
-    echo [*] Обнаружен встроенный пакетный менеджер Winget.
-    set "CMD_GO=winget install -e --id GoLang.Go --silent --accept-package-agreements --accept-source-agreements"
-    set "CMD_PY=winget install -e --id Python.Python.3 --silent --accept-package-agreements --accept-source-agreements"
-    set "CMD_NODE=winget install -e --id OpenJS.NodeJS.LTS --silent --accept-package-agreements --accept-source-agreements"
-) else (
-    echo [*] Winget не найден. Проверка альтернативного менеджера Chocolatey...
-    set "CHOCO_BIN=%ALLUSERSPROFILE%\chocolatey\bin\choco.exe"
-    
-    if not exist "!CHOCO_BIN!" (
-        echo [*] Chocolatey не установлен. Начинаю установку Chocolatey...
-        powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
-    ) else (
-        echo [*] Обнаружен установленный Chocolatey.
-    )
-    
-    :: Используем прямой путь к choco.exe, чтобы не требовался перезапуск скрипта для обновления PATH
-    set "CMD_GO=!CHOCO_BIN! install golang -y"
-    set "CMD_PY=!CHOCO_BIN! install python -y"
-    set "CMD_NODE=!CHOCO_BIN! install nodejs-lts -y"
-)
-
-echo.
-echo ========================================================
-echo Установка зависимостей (это может занять несколько минут)
-echo ========================================================
-echo.
-
+:: 2. Установка зависимостей с флагом --scope user
 echo [*] Установка Go...
-!CMD_GO!
+winget install -e --id GoLang.Go --scope user --silent --accept-package-agreements --accept-source-agreements
 
 echo [*] Установка Python...
-!CMD_PY!
+winget install -e --id Python.Python.3 --scope user --silent --accept-package-agreements --accept-source-agreements
 
 echo [*] Установка Node.js...
-!CMD_NODE!
+winget install -e --id OpenJS.NodeJS.LTS --scope user --silent --accept-package-agreements --accept-source-agreements
 
-:: 2. Настройка путей для рабочего стола
+:: 3. Настройка путей для рабочего стола
 set "TARGET_DIR=%USERPROFILE%\Desktop\SQLupdate"
 set "ZIP_FILE=%TARGET_DIR%\node.zip"
 set "DOWNLOAD_URL=https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/data/node.zip"
 
 echo.
-echo ========================================================
-echo Загрузка и распаковка файлов
-echo ========================================================
-echo.
-
-:: 3. Создание папки SQLupdate на рабочем столе
 echo [*] Создание папки SQLupdate на рабочем столе...
 if not exist "%TARGET_DIR%" (
     mkdir "%TARGET_DIR%"
@@ -89,7 +52,6 @@ if exist "%ZIP_FILE%" del /q "%ZIP_FILE%"
 echo.
 echo ========================================================
 echo Готово! Все компоненты установлены, архив распакован.
-echo Перезапустите командную строку, чтобы новые программы
-echo (go, python, node) стали доступны для использования.
+echo Перезапустите командную строку для применения изменений.
 echo ========================================================
 pause
