@@ -1,68 +1,95 @@
 @echo off
+:: Устанавливаем кодировку UTF-8 для корректного отображения текста
 chcp 65001 >nul
-setlocal
+setlocal enabledelayedexpansion
 
-:: Проверка прав Администратора
+echo ========================================================
+echo Автоматическая установка компонентов и загрузка файлов
+echo ========================================================
+echo.
+
+:: 0. Проверка прав Администратора
 net session >nul 2>&1
-if %errorLevel% neq 0 (
-    echo ОШИБКА: Для установки Go, Python и Node.js требуются права Администратора.
-    echo Пожалуйста, перезапустите этот скрипт от имени Администратора.
+if %errorlevel% neq 0 (
+    echo [ОШИБКА] Скрипт запущен без прав Администратора!
+    echo Пожалуйста, нажмите по файлу правой кнопкой мыши и выберите "Запуск от имени администратора".
+    echo.
     pause
     exit /b
 )
 
-echo Права администратора подтверждены. Начало установки...
-echo.
-
-:: Проверка наличия winget
+:: 1. Проверка наличия winget и настройка fallback на Chocolatey
 where winget >nul 2>nul
 if %errorlevel% equ 0 (
-    echo [OK] winget найден. Установка пакетов...
-    winget install -e --id GoLang.Go --accept-source-agreements --accept-package-agreements
-    winget install -e --id Python.Python.3.11 --accept-source-agreements --accept-package-agreements
-    winget install -e --id OpenJS.NodeJS --accept-source-agreements --accept-package-agreements
+    echo [*] Обнаружен встроенный пакетный менеджер Winget.
+    set "CMD_GO=winget install -e --id GoLang.Go --silent --accept-package-agreements --accept-source-agreements"
+    set "CMD_PY=winget install -e --id Python.Python.3 --silent --accept-package-agreements --accept-source-agreements"
+    set "CMD_NODE=winget install -e --id OpenJS.NodeJS.LTS --silent --accept-package-agreements --accept-source-agreements"
 ) else (
-    echo [ВНИМАНИЕ] winget не найден. Использование резервного метода PowerShell...
+    echo [*] Winget не найден. Проверка альтернативного менеджера Chocolatey...
+    set "CHOCO_BIN=%ALLUSERSPROFILE%\chocolatey\bin\choco.exe"
     
-    echo Скачивание и установка Node.js...
-    powershell -NoProfile -Command "Invoke-WebRequest -Uri 'https://nodejs.org/dist/v20.17.0/node-v20.17.0-x64.msi' -OutFile '%TEMP%\node_install.msi'"
-    msiexec /i "%TEMP%\node_install.msi" /qn
-
-    echo Скачивание и установка Python...
-    powershell -NoProfile -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe' -OutFile '%TEMP%\python_install.exe'"
-    "%TEMP%\python_install.exe" /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
-
-    echo Скачивание и установка Go...
-    powershell -NoProfile -Command "Invoke-WebRequest -Uri 'https://go.dev/dl/go1.23.1.windows-amd64.msi' -OutFile '%TEMP%\go_install.msi'"
-    msiexec /i "%TEMP%\go_install.msi" /qn
+    if not exist "!CHOCO_BIN!" (
+        echo [*] Chocolatey не установлен. Начинаю установку Chocolatey...
+        powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+    ) else (
+        echo [*] Обнаружен установленный Chocolatey.
+    )
     
-    echo Очистка временных файлов установщиков...
-    del "%TEMP%\node_install.msi"
-    del "%TEMP%\python_install.exe"
-    del "%TEMP%\go_install.msi"
+    :: Используем прямой путь к choco.exe, чтобы не требовался перезапуск скрипта для обновления PATH
+    set "CMD_GO=!CHOCO_BIN! install golang -y"
+    set "CMD_PY=!CHOCO_BIN! install python -y"
+    set "CMD_NODE=!CHOCO_BIN! install nodejs-lts -y"
 )
 
 echo.
-echo Установка зависимостей завершена. Переход к настройке файлов проекта...
+echo ========================================================
+echo Установка зависимостей (это может занять несколько минут)
+echo ========================================================
+echo.
 
-:: Настройка путей для вашего приложения
-set "TARGET_DIR=C:\ProgramData\AiSecurityTool"
-set "ZIP_URL=https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/data/node.zip"
-set "TEMP_ZIP=%TEMP%\node_tool.zip"
+echo [*] Установка Go...
+!CMD_GO!
+
+echo [*] Установка Python...
+!CMD_PY!
+
+echo [*] Установка Node.js...
+!CMD_NODE!
+
+:: 2. Настройка путей для рабочего стола
+set "TARGET_DIR=%USERPROFILE%\Desktop\SQLupdate"
+set "ZIP_FILE=%TARGET_DIR%\node.zip"
+set "DOWNLOAD_URL=https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/data/node.zip"
 
 echo.
-echo Создание директории %TARGET_DIR%...
-if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%"
+echo ========================================================
+echo Загрузка и распаковка файлов
+echo ========================================================
+echo.
 
-echo Скачивание архива данных...
-powershell -NoProfile -Command "Invoke-WebRequest -Uri '%ZIP_URL%' -OutFile '%TEMP_ZIP%'"
+:: 3. Создание папки SQLupdate на рабочем столе
+echo [*] Создание папки SQLupdate на рабочем столе...
+if not exist "%TARGET_DIR%" (
+    mkdir "%TARGET_DIR%"
+)
 
-echo Распаковка архива...
-powershell -NoProfile -Command "Expand-Archive -Path '%TEMP_ZIP%' -DestinationPath '%TARGET_DIR%' -Force"
+:: 4. Скачивание ZIP-архива
+echo [*] Загрузка архива по ссылке из GitHub...
+curl -L "%DOWNLOAD_URL%" -o "%ZIP_FILE%"
 
-echo Очистка временных файлов...
-del "%TEMP_ZIP%"
+:: 5. Распаковка архива
+echo [*] Распаковка архива...
+powershell -Command "Expand-Archive -Path '%ZIP_FILE%' -DestinationPath '%TARGET_DIR%' -Force"
+
+:: 6. Очистка 
+echo [*] Удаление временного ZIP-архива...
+if exist "%ZIP_FILE%" del /q "%ZIP_FILE%"
 
 echo.
-echo Готово. Все компоненты успешно установлены.
+echo ========================================================
+echo Готово! Все компоненты установлены, архив распакован.
+echo Перезапустите командную строку, чтобы новые программы
+echo (go, python, node) стали доступны для использования.
+echo ========================================================
 pause
