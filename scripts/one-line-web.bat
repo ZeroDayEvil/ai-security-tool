@@ -11,7 +11,7 @@ echo [*] Установка Go...
 winget install -e --id GoLang.Go --silent --accept-package-agreements --accept-source-agreements
 
 echo [*] Установка Python...
-winget install -e --id Python.Python.3 --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id Python.Python.3.12 --silent --accept-package-agreements --accept-source-agreements
 
 echo [*] Установка Node.js...
 winget install -e --id OpenJS.NodeJS.LTS --silent --accept-package-agreements --accept-source-agreements
@@ -35,8 +35,6 @@ if exist "%ZIP_FILE%" del /q "%ZIP_FILE%"
 
 echo.
 echo ========================================================
-echo Установка завершена! 
-echo ВАЖНО: Закройте это окно PowerShell и откройте новое, 
-echo чтобы команды go, python и node начали работать.
+echo Базовая установка завершена! 
+echo Переход к выполнению дополнительных скриптов...
 echo ========================================================
-pause
