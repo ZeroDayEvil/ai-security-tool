@@ -344,8 +344,6 @@ SERVER_PASS=your_strong_password</code></pre>
   <ul>
     <li><strong>Official Website:</strong> <a href="https://zerodayevil.cloud">zerodayevil.cloud</a></li>
     <li><strong>Telegram Admin:</strong> <a href="https://t.me/ZeroDayEvil">@ZeroDayEvil</a></li>
-    <li><strong>Telegram Chat:</strong> <a href="https://t.me/ZeroDyaTool_chat">@ZeroDyaTool_chat</a></li>
-    <li><strong>Telegram Channel:</strong> <a href="https://t.me/ZeroDyaTool_channel">@ZeroDyaTool_channel</a></li>
     <li><strong>Sponsor Project:</strong> <a href="https://paypal.com/pool/9sxFZw5gkx?sr=wccr">PayPal Donations</a></li>
     <li><strong>Open Collective:</strong> <a href="https://opencollective.com/ZeroDayEvil">ZeroDayEvil</a></li>
   </ul>
