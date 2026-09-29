@@ -242,11 +242,11 @@
     <tbody>
       <tr>
         <td><strong>🪟 Windows</strong></td>
-        <td><code>v6.3.20</code></td>
+        <td><code>v6.3.27</code></td>
         <td>x64 Installer (.exe)</td>
         <td>2026-09-08</td>
         <td>🟢 Latest</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#Ai-Security-Tool-v5.3.27-win-x64-installer.exe"><strong>Download .exe</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool/downloads/#Ai-Security-Tool-v5.3.27-win-x64-installer.exe"><strong>Download .exe</strong></a></td>
       </tr>
       <tr>
         <td><strong>🪟 Windows</strong></td>
