@@ -43,7 +43,7 @@
   {
     "id": "upd-2026-08-24-patch",
     "type": "Patch",
-    "version": "v5.3.24",
+    "version": "v5.3.27",
     "date": "2026-08-24",
     "title": "Patch cycle for agent orchestration stability",
     "summary": "Adjusted fallback orchestration paths and improved long-running task behavior under mixed workloads.",
