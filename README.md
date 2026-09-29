@@ -20,7 +20,7 @@
   <p align="center">
     <a href="https://zerodayevil.cloud" rel="nofollow"><b>🌐 Web Demo</b></a> • 
     <a href="https://zerodayevil.github.io/ai-security-tool" rel="nofollow"><b>📚 Project Website</b></a> • 
-    <a href="https://t.me/ZeroDyaTool_chat" rel="nofollow"><b>💬 Community Chat</b></a>
+    <a href="https://t.me/ZeroDayEvil_chat" rel="nofollow"><b>💬 Community Chat</b></a>
   </p>
 
   <p align="center">
