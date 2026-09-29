@@ -7,6 +7,36 @@ echo Автоматическая установка (Режим Админис�
 echo ========================================================
 echo.
 
+:: ========================================================
+:: БЛОК УСТАНОВКИ WINGET (ЕСЛИ ОН ОТСУТСТВУЕТ)
+:: ========================================================
+where winget >nul 2>nul
+if %errorlevel% equ 0 (
+    echo [*] WinGet уже установлен в системе.
+) else (
+    echo [!] WinGet не найден. Начинаем установку WinGet и зависимостей...
+    
+    :: Скачиваем UI Xaml (необходимая зависимость для WinGet на чистых Windows/Server)
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com' -OutFile '$env:TEMP\Microsoft.UI.Xaml.appx'"
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '$env:TEMP\Microsoft.UI.Xaml.appx'" 2>nul
+    
+    :: Скачиваем и устанавливаем сам WinGet
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://aka.ms' -OutFile '$env:TEMP\winget.msixbundle'"
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '$env:TEMP\winget.msixbundle'"
+    
+    :: Очистка временных файлов установки
+    del /q "%TEMP%\Microsoft.UI.Xaml.appx" 2>nul
+    del /q "%TEMP%\winget.msixbundle" 2>nul
+    
+    echo [*] Установка WinGet завершена. Обновляем переменные окружения...
+    
+    :: Динамическое обновление PATH для текущей сессии BAT, чтобы команда winget сразу заработала
+    for /f "tokens=2*" %%A in ('reg query "HKLM\System\CurrentControlSet\Control\Session Manager\Environment" /v Path') do set "Path=%%B"
+    for /f "tokens=2*" %%A in ('reg query "HKCU\Environment" /v Path') do set "Path=!Path!;%%B"
+)
+echo.
+:: ========================================================
+
 echo [*] Установка Go...
 winget install -e --id GoLang.Go --silent --accept-package-agreements --accept-source-agreements
 
