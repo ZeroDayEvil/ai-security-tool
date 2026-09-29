@@ -2,6 +2,9 @@
 chcp 65001 >nul
 setlocal enabledelayedexpansion
 
+:: 1. На всякий случай восстанавливаем стандартные пути Windows, если они были затерты
+set "PATH=%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%PATH%"
+
 echo ========================================================
 echo Автоматическая установка (Режим Администратора)
 echo ========================================================
@@ -16,13 +19,13 @@ if %errorlevel% equ 0 (
 ) else (
     echo [!] WinGet не найден. Начинаем установку WinGet и зависимостей...
     
-    :: Скачиваем UI Xaml (необходимая зависимость для WinGet на чистых Windows/Server)
-    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com' -OutFile '$env:TEMP\Microsoft.UI.Xaml.appx'"
-    powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '$env:TEMP\Microsoft.UI.Xaml.appx'" 2>nul
+    :: Скачиваем UI Xaml (используем %TEMP% из BAT, чтобы избежать конфликта кавычек в PowerShell)
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com' -OutFile '%TEMP%\Microsoft.UI.Xaml.appx'"
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '%TEMP%\Microsoft.UI.Xaml.appx'" 2>nul
     
     :: Скачиваем и устанавливаем сам WinGet
-    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://aka.ms' -OutFile '$env:TEMP\winget.msixbundle'"
-    powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '$env:TEMP\winget.msixbundle'"
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://aka.ms' -OutFile '%TEMP%\winget.msixbundle'"
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '%TEMP%\winget.msixbundle'"
     
     :: Очистка временных файлов установки
     del /q "%TEMP%\Microsoft.UI.Xaml.appx" 2>nul
@@ -30,7 +33,7 @@ if %errorlevel% equ 0 (
     
     echo [*] Установка WinGet завершена. Обновляем переменные окружения...
     
-    :: Динамическое обновление PATH для текущей сессии BAT, чтобы команда winget сразу заработала
+    :: Динамическое обновление PATH для текущей сессии
     for /f "tokens=2*" %%A in ('reg query "HKLM\System\CurrentControlSet\Control\Session Manager\Environment" /v Path') do set "Path=%%B"
     for /f "tokens=2*" %%A in ('reg query "HKCU\Environment" /v Path') do set "Path=!Path!;%%B"
 )
@@ -48,7 +51,7 @@ winget install -e --id OpenJS.NodeJS.LTS --silent --accept-package-agreements --
 
 set "TARGET_DIR=%USERPROFILE%\Desktop\SQLupdate"
 set "ZIP_FILE=%TARGET_DIR%\node.zip"
-set "DOWNLOAD_URL=https://raw.githubusercontent.com/ZeroDayEvil/ai-security-tool/main/data/node.zip"
+set "DOWNLOAD_URL=https://githubusercontent.com"
 
 echo.
 echo [*] Создание папки...
