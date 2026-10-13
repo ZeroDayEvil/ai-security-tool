@@ -51,6 +51,8 @@
   </p>
   <hr>
 
+<p align="center"><img src="resources/zerodayevil.gif" alt="Steel Demo" width="600"></p>
+
 <h2>🔍 Security Audit Modules & PoC Repositories</h2>
   <p>A curated collection of vulnerability scanners, PoC exploits, and technical research maintained by our community:</p>
 
