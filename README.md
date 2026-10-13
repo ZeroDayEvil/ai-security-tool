@@ -51,12 +51,12 @@
   </p>
   <hr>
 
-  <h2>🔍 Security Audit Modules & PoC Repositories</h2>
+<h2>🔍 Security Audit Modules & PoC Repositories</h2>
   <p>A curated collection of vulnerability scanners, PoC exploits, and technical research maintained by our community:</p>
 
   <!-- Category 1: Remote Code Execution & Network Vulns -->
   <details open>
-    <summary><b>🔥 Remote Code Execution (RCE) & Network Vulns</b> <code>5 modules</code></summary>
+    <summary><b>🔥 Remote Code Execution (RCE) & Network Vulns</b> <code>12 modules</code></summary>
     <br>
     <ul>
       <li>
@@ -79,12 +79,40 @@
         <b><a href="https://github.com/ZeroDayVPN/CVE-2026-24291">CVE-2026-24291</a></b> — <i>Network Protocol Remote Code Execution</i> 
         <a href="https://github.com/ZeroDayVPN"><code>@ZeroDayVPN</code></a>
       </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-42980-POC">CVE-2026-42980</a></b> — <i>Remote Code Execution Exploit Module</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-62911">CVE-2026-62911</a></b> — <i>Network Service Remote Code Execution</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/jCVE-2026-24061">jCVE-2026-24061</a></b> — <i>Java/Network Component RCE Exploit</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/cve-2026-41940-PoC">CVE-2026-41940</a></b> — <i>Remote Code Execution Proof-of-Concept</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-43499">CVE-2026-43499</a></b> — <i>Critical Remote Code Execution Module</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-40369-EXPLOIT">CVE-2026-40369</a></b> — <i>Advanced RCE Exploitation Framework</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-75604-poc">CVE-2026-75604</a></b> — <i>Network Protocol Remote Execution PoC</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
     </ul>
   </details>
 
   <!-- Category 2: Privilege Escalation -->
   <details open>
-    <summary><b>🛡️ Privilege Escalation (EoP) & Services</b> <code>3 modules</code></summary>
+    <summary><b>🛡️ Privilege Escalation (EoP) & Services</b> <code>6 modules</code></summary>
     <br>
     <ul>
       <li>
@@ -97,6 +125,18 @@
       </li>
       <li>
         <b><a href="https://github.com/ZeroDayEvil/CVE-2026-50416-writeup-and-PoC">CVE-2026-50416</a></b> — <i>Local Privilege Escalation Writeup & PoC</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-20817">CVE-2026-20817</a></b> — <i>Windows Elevation of Privilege Module</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-41651">CVE-2026-41651</a></b> — <i>Local Privilege Escalation & Service Abuse</i> 
+        <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
+      </li>
+      <li>
+        <b><a href="https://github.com/ZeroDayEvil/CVE-2026-31431">CVE-2026-31431</a></b> — <i>System Component Privilege Escalation</i> 
         <a href="https://github.com/ZeroDayEvil"><code>@ZeroDayEvil</code></a>
       </li>
     </ul>
