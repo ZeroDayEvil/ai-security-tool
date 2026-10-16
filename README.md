@@ -50,7 +50,6 @@
   </p>
   <hr>
 
-<p align="center"><img width="100%" src="resources/zerodayevil.gif" alt="Steel Demo" style="max-width: 100%; border-radius: 8px;" ></p>
 
 <h2>🔍 Security Audit Modules & PoC Repositories</h2>
   <p>A curated collection of vulnerability scanners, PoC exploits, and technical research maintained by our community:</p>
@@ -283,7 +282,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><strong>🪟 Windows</strong></td>
+        <td><strong>💻 Windows</strong></td>
         <td><code>v6.3.27</code></td>
         <td>x64 Installer (.exe)</td>
         <td>2026-09-08</td>
@@ -291,12 +290,12 @@
         <td><a href="https://zerodayevil.github.io/ai-security-tool/downloads/#Ai-Security-Tool-v5.3.27-win-x64-installer.exe"><strong>Download .exe</strong></a></td>
       </tr>
       <tr>
-        <td><strong>🪟 Windows</strong></td>
+        <td><strong>💻 Windows</strong></td>
         <td><code>v6.3.20</code></td>
         <td>x64 Portable (.tar.gz)</td>
         <td>2026-09-08</td>
         <td>🟢 Latest</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#6.3.20-win-x64.tar.gz"><strong>Download .tar.gz</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool/downloads/#6.3.27-win-x64.tar.gz"><strong>Download .tar.gz</strong></a></td>
       </tr>
       <tr>
         <td><strong>🍏 macOS</strong></td>
@@ -304,7 +303,7 @@
         <td>Apple Silicon M1/M2/M3 (.dmg)</td>
         <td>2026-09-05</td>
         <td>🟢 Stable</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.29-mac-arm64.dmg"><strong>Download .dmg</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool/downloads/#5.3.27-mac-arm64.dmg"><strong>Download .dmg</strong></a></td>
       </tr>
       <tr>
         <td><strong>🐧 Linux</strong></td>
@@ -312,7 +311,7 @@
         <td>Universal x64 (.tar.gz)</td>
         <td>2026-09-01</td>
         <td>🟢 Stable</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#5.3.27-linux-x64.tar.gz"><strong>Download .tar.gz</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool/downloads/#5.3.27-linux-x64.tar.gz"><strong>Download .tar.gz</strong></a></td>
       </tr>
       <tr>
         <td><strong>🤖 Android</strong></td>
@@ -320,11 +319,11 @@
         <td>ARM64 APK (.apk)</td>
         <td>2026-09-01</td>
         <td>🟢 Stable</td>
-        <td><a href="https://zerodayevil.github.io/ai-security-tool#android-arm64-v8a-5.3.27.apk"><strong>Download .apk</strong></a></td>
+        <td><a href="https://zerodayevil.github.io/ai-security-tool/downloads/#android-arm64-v8a-5.3.27.apk"><strong>Download .apk</strong></a></td>
       </tr>
     </tbody>
   </table>
-
+<br />
   <h3>🧪 One-Line Installation Scripts</h3>
   <p>Fast deployment via command-line installation scripts:</p>
   <p><strong>Linux / macOS:</strong></p>
