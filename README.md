@@ -1,4 +1,3 @@
-
 <article class="markdown-body entry-content container-lg" itemprop="text">
   <h1>
     <p align="center">
